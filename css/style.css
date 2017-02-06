@@ -1,3 +1,4 @@
+/* NAVIVATION BAR */
 #nav_logo {
 	height: 45px;
 }
@@ -9,3 +10,34 @@
 	padding-right: 30px;
 }
 
+/* MENU */
+.menu-header-img {
+	margin-top: 55px;
+	height: 175px;
+	background-color: red;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+}
+.menu-header {
+	font-size: 70px;
+	align-self: center;
+}
+.menu-col {
+	margin-bottom: 50px;
+}
+.menu-item {
+	margin-top: 50px;
+}
+.item-name {
+	font-size: 18px;
+	font-weight: bold;
+}
+.item-price {
+	font-size: 18px;
+	font-weight: bold;
+}
+.item-description {
+	color: gray;
+	margin-left: 15px;
+}
