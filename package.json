@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/arc013/blue_sun_project#readme",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "path": "^0.12.7"
   }
 }
