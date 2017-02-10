@@ -1,0 +1,22 @@
+{
+  "name": "blue_sun_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arc013/blue_sun_project.git"
+  },
+  "author": "Arnold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arc013/blue_sun_project/issues"
+  },
+  "homepage": "https://github.com/arc013/blue_sun_project#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
