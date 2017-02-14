@@ -1,29 +1,30 @@
 /* NAVIVATION BAR */
+#main {
+	z-index: 1000;
+}
 #nav_logo {
 	height: 45px;
 }
 .navbar-brand {
 	padding: 5px 10px 5px 15px;
 }
-.navbar-right {
-	padding-top: 5px;
-	padding-right: 30px;
-}
 .navbar-collapse.collapse.in ul li, .navbar-collapse.collapsing ul li {
 	text-align: center;
 	font-size: 25px;
 	margin: 20px;
 }
-#main {
-	z-index: 1;
+.navbar-nav>li>a {
+	line-height: 10px !important;
 }
+
+
+/* MENU NAVIGATION BAR */
 #navbar-menu {
 	z-index: 2;
 }
-
-/* MENU NAVIGATION BAR */
 #menu_nav {
 	top: 51px;
+	z-index: 900;
 }
 #menu_nav .navbar-toggle {
 	float: none;
@@ -47,7 +48,9 @@
 	font-size: 25px;
 	margin: 20px;
 }
-
+#menu_nav > div.navbar-header > button {
+	height: 33px;
+}
 
 /* MENU */
 @media screen and (max-width: 480px) {
@@ -70,7 +73,7 @@
 	margin-top: 51px;
 }
 .menu-header-img {
-	margin-top: 55px;
+	margin-top: 50px;
 	height: 350px;
 	background-color: red;
 	width: 100%;
