@@ -3,13 +3,15 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var http = require('http');
-var path = require('path');
+var express    = require('express');
+var http       = require('http');
+var path       = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
-var menu = require('./routes/menu');
+var index   = require('./routes/index');
+var menu    = require('./routes/menu');
+var contact = require('./routes/contact');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -68,7 +70,9 @@ app.get('/index', function (req, res) {
 app.get('/menu', function (req, res) {
     res.render('menu');
 });
-
+app.get('/contact', function(req,res) {
+    res.render('contact_us');
+});
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
