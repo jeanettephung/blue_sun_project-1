@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//featured dishes slider initialisation
-	$("#dishes").carouFredSel({
+	/*$("#dishes").carouFredSel({
 		circular: true,
 		infinite: false,
 		auto 	: false,
@@ -12,7 +12,22 @@ $(document).ready(function(){
 			key		: "right"
 		},
 		pagination	: "#slider_nav"
-	});
+	});*/
+	//console.log(window.location.pathname);
+
+
+
+    var ul    = document.getElementById("grab_nav");
+    var items = ul.getElementsByTagName("li");
+
+    for (i=0; i< items.length; i++){
+        var current_nav = $(items[i]).find('a').attr("href");
+        //console.log(current_nav);
+        //console.log(window.location.pathname);
+        if ( current_nav == window.location.pathname) {
+            $(items[i]).addClass("active_page");
+        }
+    }
 
 
 
@@ -20,7 +35,7 @@ $(document).ready(function(){
 
 
 	//gallery hover effect
-	$('.gallery .media img').hover(function(){
+	/*$('.gallery .media img').hover(function(){
 		$('.gallery .media img').addClass('inactive');
 		$(this).removeClass('inactive').addClass('active');
 	}, function(){
@@ -55,7 +70,7 @@ $(document).ready(function(){
 		$('.menu .hidden_items').slideUp({duration:800,  easing: "easeInOutQuart", complete : function(){
 			update_btn('#hide_items', 'more_items', 'show more<hr/><span class="bottom_arrow"></span>');
 		}});	    
-	});
+	});*/
 
 
 });

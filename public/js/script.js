@@ -1,6 +1,6 @@
 $(document).click(function (event) {
 	// main navbar click out -> close menu
-    var clickover = $(event.target);
+   /* var clickover = $(event.target);
     var $navbar = $(".navbar-collapse");               
     var _opened = $navbar.hasClass("in");
     if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
@@ -13,5 +13,5 @@ $(document).click(function (event) {
     var _opened = $navbar.hasClass("in");
     if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
         $navbar.collapse('hide');
-    }
+    }*/
 });

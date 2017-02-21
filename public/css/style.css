@@ -103,3 +103,11 @@
 	color: gray;
 	margin-left: 15px;
 }
+ul.nav a:hover {
+	color: #ff0000 !important;
+	text-decoration: underline;
+}
+.active_page {
+	background-color: #f5e79e;
+
+}
