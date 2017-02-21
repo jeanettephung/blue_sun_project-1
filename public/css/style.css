@@ -79,5 +79,9 @@ ul.nav a:hover {
 }
 .active_page {
 	background-color: #f5e79e;
+}
 
+/** STYLES **/
+.wrapper {
+	margin-top: 50px;
 }
