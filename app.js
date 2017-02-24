@@ -9,7 +9,10 @@ var path       = require('path');
 var handlebars = require('express3-handlebars')
 
 var index   = require('./routes/index');
+var about 	= require('./routes/about')
 var menu    = require('./routes/menu');
+var menu2    = require('./routes/menu2');
+var cater		= require('./routes/cater');
 var contact = require('./routes/contact');
 
 // Example route
@@ -67,8 +70,17 @@ app.get('/', function (req, res) {
 app.get('/index', function (req, res) {
     res.render('index');
 });
+app.get('/about', function (req, res) {
+    res.render('about');
+});
 app.get('/menu', function (req, res) {
     res.render('menu');
+});
+app.get('/menu2', function (req, res) {
+    res.render('menu2');
+});
+app.get('/cater', function (req, res) {
+    res.render('cater');
 });
 app.get('/contact', function(req,res) {
     res.render('contact_us');
