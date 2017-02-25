@@ -1,12 +1,15 @@
 /* MENU */
+#menu.container {
+	padding: 0 !important;
+}
 @media screen and (max-width: 480px) {
   .menu-header-img {
-		height: 200px !important;
+		height: 160px !important;
 	}
 }
 @media screen and (max-width: 480px) {
 	.menu-header {
-		font-size: 40px !important;
+		font-size: 30px !important;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -16,17 +19,45 @@
 }
 
 .menu-header-img {
-	height: 350px;
-	background-color: red;
+	height: 330px;
 	width: 100%;
 	display: flex;
   justify-content: center;
-	border: black 1px solid;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media screen and (min-width: 480px) {
+	.menu-header-img {
+		background-size: 70% 170%;
+		background-position: center;
+	}
 }
 .menu-header {
+	font-family: "aleo-regular", arial;
 	font-size: 70px;
 	align-self: center;
 	text-align: center;
+	text-shadow: 3px 4px 5px #000;
+	color: white;
+	font-weight: bold;
+}
+.menu-category {
+	 	margin-left: 2%;
+}
+@media screen and (max-width: 480px) {
+	.menu-category {
+		margin-left: 4%;
+	}
+}
+.menu-container {
+		width: 75%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+	.menu-container {
+		width: 100%;
+	}
 }
 .menu-col {
 	margin-bottom: 50px;
@@ -66,3 +97,14 @@ ul.nav a:hover {
 .active_page {
 	background-color: #f5e79e;
 }
+
+#header1 {
+	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+}
+
+#header2 {
+	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+}
+
+#header3 {
+	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
