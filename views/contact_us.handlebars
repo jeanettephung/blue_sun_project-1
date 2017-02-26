@@ -9,14 +9,25 @@
     </style>
 </head>
 <body>
+<div id="contact">
+    <div class="container-fluid">
 
-    <div id="map"></div>
+        <div id="contact_map" class="col-xs-12 col-md-6">
+            <div id="map"></div>
+            <a href="https://maps.google.com?saddr=Current+Location&daddr=4646+Convoy+St+#114+San+Diego+CA+92111" class="btn btn-redMoon btn-lg col-xs-12">
+                <span class="glyphicon glyphicon-map-marker"></span> Direct me there
+            </a>
+        </div>
 
-<a href="https://maps.google.com?saddr=Current+Location&daddr=4646+Convoy+St+#114+San+Diego+CA+92111" class="btn btn-info btn-lg">
-    <span class="glyphicon glyphicon-map-marker"></span> Direct me there
-</a>
+        <div id="contact_content" class="col-xs-12 col-md-6">
+            <center><h3>Come Visit Us!</h3></center>
+
+        </div>
+    </div>
+</div>
+
+
 <script>
-
     function initMap() {
         var uluru = {lat: 32.8250641, lng: -117.15585 };
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -29,8 +40,11 @@
         });
     }
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9ZAA7ZWGfDjJMPSMPkWU8e2TmBweS4_I&callback=initMap">
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9ZAA7ZWGfDjJMPSMPkWU8e2TmBweS4_I&callback=initMap">
 </script>
-</body>
-</html>
+
+
+<link rel="stylesheet" href="/css/contact.css">
+
+

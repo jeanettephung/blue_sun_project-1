@@ -1,0 +1,42 @@
+#about {
+	margin-top: 75px;
+}
+
+#cater_image {
+	padding: 0;
+}
+
+@media (max-width: 991px) {
+  .extra_image {
+    display: none;
+	}
+}
+
+#cater_content {
+	padding: 0 40px;
+}
+
+#cater_submit {
+	margin: 10px auto;	
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+label {
+	margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  #about_content {
+    padding: 10px 60px 20px 60px;
+	}
+}
+
+@media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
