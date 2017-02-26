@@ -1,4 +1,4 @@
-#about {
+/*#about {
 	margin-top: 75px;
 }
 
@@ -8,9 +8,9 @@
 
 #about_content {
 	padding: 0 80px;
-}
+}*/
 
-.container-fluid {
+#chefimg {
     padding: 0px;
 }
 @media (max-width: 480px) {
