@@ -45,3 +45,10 @@ body {
     height: 100%;
     width: 100%;
 }
+ul.nav a:hover {
+    color: #ff0000 !important;
+    text-decoration: underline;
+}
+.active_page {
+    background-color: #f5e79e;
+}
