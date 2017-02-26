@@ -29,7 +29,7 @@
 }
 @media screen and (min-width: 480px) {
 	.menu-header-img {
-		background-size: 70% 170%;
+/*		background-size: 70% 170%;*/
 		background-position: center;
 	}
 }
