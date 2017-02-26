@@ -25,6 +25,10 @@
 	}
 }
 
+.row.border-between {
+	margin: 0;
+}
+
 #hours {
 	text-align: center;
 }

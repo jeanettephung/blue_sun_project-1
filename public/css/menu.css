@@ -1,6 +1,7 @@
 /* MENU */
 #menu.container {
 	padding: 0 !important;
+	background-color: rgba(183, 168, 151, 0.25);
 }
 @media screen and (max-width: 480px) {
   .menu-header-img {
@@ -32,6 +33,9 @@
 /*		background-size: 70% 170%;*/
 		background-position: center;
 	}
+}
+.menu-header-img:hover {
+	cursor: pointer;
 }
 .menu-header {
 	font-family: "aleo-regular", arial;
@@ -72,17 +76,17 @@
 	padding: 0 15px !important;
 }
 .item-name, .item-price {	
-	color: #545454;
+	color: rgba(84, 84, 84, 0.84);
 	font-family: "aleo-regular", arial;
 	font-size: 16px;
 	margin: 0;
-	background: #fff;
+	background: rgb(237, 234, 229);
 	padding: 0;
 	letter-spacing: .5px;
 	font-weight: normal;
 }
 .item-description {
-	color: #b7b7b7;
+	color: #a2a0a0;
 	font-family: "aleo-italic", arial;
 	font-size: 12px;
 	font-style: italic;
