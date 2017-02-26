@@ -94,13 +94,7 @@
 	font-weight: lighter;
 	padding: 0 0 0 15px;
 }
-ul.nav a:hover {
-	color: #ff0000 !important;
-	text-decoration: underline;
-}
-.active_page {
-	background-color: #f5e79e;
-}
+
 
 #header1 {
 	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
