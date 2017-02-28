@@ -37,6 +37,7 @@
 	clear: both;
 	display: block;
 }
+/*
 .footer {
 	background: #EDEFF1;
 	height: auto;
@@ -45,6 +46,17 @@
 	width: 100%;
 	border-bottom: 1px solid #CCCCCC;
 	border-top: 1px solid #DDDDDD;
+}
+*/
+.footer {
+	color: white;
+	background: #830a10;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #58080c;
+  border-top: 1px solid #750c11;
 }
 .footer p {
 	margin: 0;
@@ -67,14 +79,14 @@
 	margin-left: 8px;
 	padding-left: 0;
 	margin-top: 15px;
-	color: #7F8C8D;
+/*	color: #7F8C8D;*/
 }
 .footer ul li a {
 	padding: 0 0 5px 0;
 	display: block;
 }
 .footer a {
-	color: #78828D
+	color: white;
 }
 .supportLi h4 {
 	font-size: 20px;
@@ -112,8 +124,8 @@
 	box-shadow: 0 1px 0 #B4B3B3;
 }
 .social li {
-	background: none repeat scroll 0 0 #B5B5B5;
-	border: 2px solid #B5B5B5;
+	background: none repeat scroll 0 0 #3b3b3b;
+	border: 2px solid #3b33b;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -142,9 +154,13 @@
 .social li a {
 	color: #EDEFF1;
 }
-.social li:hover {
+.social .facebook:hover {
 	border: 2px solid #2c3e50;
 	background: #2c3e50;
+}
+.social .yelp:hover {
+	border: 2px solid #be2020;
+	background: #be2020;
 }
 .social li a i {
 	font-size: 16px;
@@ -162,4 +178,21 @@
 }
 .payments {
 	font-size: 1.5em;	
+}
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover {
+  transform: translateY(-8px);
+}
+#return-to-top:hover {
+	text-decoration: none;
 }

@@ -1,3 +1,9 @@
+.btn-redMoon { 
+  color: #ffffff; 
+  background-color: #840A11; 
+  border-color: #75060c; 
+} 
+
 /* NAVIVATION BAR */
 #main {
 	z-index: 1000;
@@ -32,7 +38,9 @@
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #840a11;
+    color: #840a11 !important;
+		text-decoration: none;
+		font-weight: bolder;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -71,7 +79,7 @@
 
 /** STYLES **/
 body {
-	margin-top: 75px;
+	margin-top: 100px;
 	overflow-x: hidden; 
 }
 
@@ -97,8 +105,12 @@ ul.nav a:hover {
     color: #ff0000 !important;
     text-decoration: underline;
 }
-.active_page {
-    background-color: #f5e79e;
+
+.active_page a {
+    color: #840a11 !important;
+	  font-size: 25px;
+		font-weight: bolder;
+	  bottom: 4px;
 }
 .top-strip {
     z-index: 100;

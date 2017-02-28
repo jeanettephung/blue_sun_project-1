@@ -40,3 +40,9 @@ label {
         padding-right: 0px;
     }
 }
+@media (min-width: 797px) {
+	.vcenter {
+			display: flex;
+			align-items: center;
+	}
+}
