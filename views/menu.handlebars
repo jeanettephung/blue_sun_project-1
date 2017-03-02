@@ -1,197 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Resto HTML5/CSS3 Restaurant Home Page website Template"/>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/carouFredSel.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+<link rel="stylesheet" href="/css/menu.css">
 
-
-</head>
-
-
-    <section class="menu">
-        <div class="wrapper">
-            <div class="menu_title">
-                <h2>The Menu</h2>
-            </div>
-
-            <div class="mean_menu">
-                <!--  left menu row  -->
-                <div class="col-xs-12 col-md-6">
-                    <article class="lmenu">
-                        <ul>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                    <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                                </div>
-                                <h4 class="item_price">$50</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Metus varius laoreet.</h3>
-                                    <p class="item_desc">Chicken, mozzarella cheese, onions.</p>
-                                </div>
-                                <h4 class="item_price">$62</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Donec sodales magna.</h3>
-                                    <p class="item_desc">Tuna, Sweetcorn, Cheese.</p>
-                                </div>
-                                <h4 class="item_price">$25</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Saugue velit cursus.</h3>
-                                    <p class="item_desc">Pineapple, Minced Beef, Cheese.</p>
-                                </div>
-                                <h4 class="item_price">$30</h4>
-                                <span class="separator"></span>
-                            </li>
-                        </ul>
-                    </article>
-
-
-                </div>
-
-                <!--  right menu row  -->
-                <div class="col-xs-12 col-md-6">
-                    <article class="rmenu" col-xs-12 col-md-6>
-                        <ul>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Arcu pede enim justo.</h3>
-                                    <p class="item_desc">Tuna, Sweetcorn, Cheese.</p>
-                                </div>
-                                <h4 class="item_price">$45</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Cras dapibussemper nisi.</h3>
-                                    <p class="item_desc">Pineapple, Minced Beef, Cheese.</p>
-                                </div>
-                                <h4 class="item_price">$32</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Quam semper libero.</h3>
-                                    <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                                </div>
-                                <h4 class="item_price">$15</h4>
-                                <span class="separator"></span>
-                            </li>
-                            <li>
-                                <div class="item_info">
-                                    <h3 class="item_name">Nam eget dui Etiam.</h3>
-                                    <p class="item_desc">Chicken, mozzarella cheese, onions.</p>
-                                </div>
-                                <h4 class="item_price">$35</h4>
-                                <span class="separator"></span>
-                            </li>
-                        </ul>
-                    </article>
-                </div>
-
-            </div>
-
-            <!--  hidden menu items  -->
-            <div class="hidden_items">
-                <!--  left menu row  -->
-                <article class="lmenu col-xs-12 col-md-6">
-                    <ul>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                           <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                    </ul>
-                </article>
-
-                <!--  right menu row  -->
-                <article class="rmenu col-xs-12 col-md-6">
-                    <ul>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                        <li>
-                            <div class="item_info">
-                                <h3 class="item_name">Voluptate cillum fugiat.</h3>
-                                <p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-                            </div>
-                            <h4 class="item_price">$50</h4>
-                            <span class="separator"></span>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-
-            <div class="load-more">
-                <a href="#" id="more_items">
-                    show more
-                    <hr/>
-                    <span class="bottom_arrow"></span>
-                </a>
-            </div>
-        </div>
-    </section><!--  end menu  -->
-
-</div>
+<!-- MENU SECTION -->
+<div class="container" id="menu">
+<div class="menu-section">	
+	<div class="menu-header-img col-xs-12" id="header1" data-toggle="collapse" data-target="#cat1">
+		<div class="menu-header col-xs-12">
+			Menu Category
+		</div>
+	</div>
+	<div class="menu-container">
+		<div id="cat1" class="menu-category collapse">
+			<div class="menu-col menu-left col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-col menu-right col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name </div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item last-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+<!-- MENU SECTION END -->
+<!-- MENU SECTION -->
+<div class="menu-section">	
+	<div class="menu-header-img col-xs-12" id="header2" data-toggle="collapse" data-target="#cat2">
+		<div class="menu-header col-xs-12">
+			Menu Category
+		</div>
+	</div>
+	<div class="menu-container">
+		<div id="cat2" class="menu-category collapse">
+			<div class="menu-col menu-left col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-col menu-right col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name </div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item last-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+<!-- MENU SECTION END -->
+<!-- MENU SECTION -->
+<div class="menu-section">	
+	<div class="menu-header-img col-xs-12" id="header3" data-toggle="collapse" data-target="#cat3">
+		<div class="menu-header col-xs-12">
+			Menu Category
+		</div>
+	</div>
+	<div class="menu-container">
+		<div id="cat3" class="menu-category collapse">
+			<div class="menu-col menu-left col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-col menu-right col-sm-6 col-xs-12">
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name </div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+				<div class="menu-item last-item">
+					<div class="row">
+						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
+						<div class="item-price col-xs-2">$10</div>
+					</div>
+					<div class="row">
+						<div class="item-description col-xs-12">some short description</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+<!-- MENU SECTION END -->
+	</div>
