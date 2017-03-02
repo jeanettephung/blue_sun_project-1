@@ -25,6 +25,24 @@
     }
 }
 
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+#about {
+  min-height: 100%;
+  margin-bottom: -250px; 
+}
+#about:after {
+  content: "";
+  display: block;
+}
+#footer, #about:after {
+  height: 250px; 
+}
+
 
 /* ORIGINAL CSS */
 
