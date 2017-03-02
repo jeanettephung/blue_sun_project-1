@@ -4,6 +4,12 @@
   border-color: #75060c; 
 } 
 
+.btn-gray { 
+  color: #FFFFFF; 
+  background-color: #3B3B3B; 
+  border-color: #3B3B3B; 
+} 
+
 /* NAVIVATION BAR */
 #main {
 	z-index: 1000;

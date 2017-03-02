@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+		$('#return-to-top').hide();
+	
 		$(window).scroll(function() {
 				if ($(this).scrollTop() >= 50) {
 						$('#return-to-top').fadeIn(200);

@@ -14,7 +14,11 @@
 #gmap {
     padding: 0px;
 }
- 
+
+.btn-gray {
+	margin: 10px 0;
+}
+
 .btn-redMoon:hover, 
 .btn-redMoon:focus, 
 .btn-redMoon:active, 
@@ -53,4 +57,44 @@ fieldset[disabled] .btn-redMoon.active {
 .btn-redMoon .badge { 
   color: #840A11; 
   background-color: #ffffff; 
+}
+
+.btn-gray:hover, 
+.btn-gray:focus, 
+.btn-gray:active, 
+.btn-gray.active, 
+.open .dropdown-toggle.btn-gray { 
+  color: #FFFFFF; 
+  background-color: #525252; 
+  border-color: #3B3B3B; 
+} 
+ 
+.btn-gray:active, 
+.btn-gray.active, 
+.open .dropdown-toggle.btn-gray { 
+  background-image: none; 
+} 
+ 
+.btn-gray.disabled, 
+.btn-gray[disabled], 
+fieldset[disabled] .btn-gray, 
+.btn-gray.disabled:hover, 
+.btn-gray[disabled]:hover, 
+fieldset[disabled] .btn-gray:hover, 
+.btn-gray.disabled:focus, 
+.btn-gray[disabled]:focus, 
+fieldset[disabled] .btn-gray:focus, 
+.btn-gray.disabled:active, 
+.btn-gray[disabled]:active, 
+fieldset[disabled] .btn-gray:active, 
+.btn-gray.disabled.active, 
+.btn-gray[disabled].active, 
+fieldset[disabled] .btn-gray.active { 
+  background-color: #3B3B3B; 
+  border-color: #3B3B3B; 
+} 
+ 
+.btn-gray .badge { 
+  color: #3B3B3B; 
+  background-color: #FFFFFF; 
 }

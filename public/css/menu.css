@@ -1,5 +1,61 @@
 /* MENU */
-#menu.container {
+@media (min-width: 797px) {
+	#menu_mobile { 
+		display: none;
+	}
+}
+@media (max-width: 797px) {
+	#menu_desktop { 
+		display: none;
+	}
+}
+
+/* DESKTOP */
+#menu_desktop #menu_col .item-name, #menu_desktop #menu_col .item-price {
+	background-color: white !important;
+}
+.desktop-header-img {
+	width: 100%;
+	height: 150px;
+}
+#category_col {
+	margin-top: 50px;
+}
+#category_col .category_menu {
+	padding: 0;
+}
+.category_menu .desktop-header-img .menu-header {
+	font-size: 2.2vw;
+	padding: 0;
+	margin-top: 20%;
+}
+.desktop-header-1 {
+	background-size: cover;
+	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+}
+.desktop-header-2 {
+	background-size: cover;
+	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+}
+.desktop-header-3 {
+	background-size: cover;
+	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
+}
+.desktop-header-4 {
+	background-size: cover;
+	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+}
+.desktop-header-5 {
+	background-size: cover;
+	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+}
+.desktop-header-6 {
+	background-size: cover;
+	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
+}
+
+/* MOBILE */
+#menu_mobile.container {
 	padding: 0 !important;
 	background-color: rgba(183, 168, 151, 0.25);
 }
