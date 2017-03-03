@@ -11,7 +11,7 @@
 }
 
 /* DESKTOP */
-#menu_desktop #menu_col .item-name, #menu_desktop #menu_col .item-price {
+#menu_desktop .menu-col .item-name, #menu_desktop .menu-col .item-price {
 	background-color: white !important;
 }
 .desktop-header-img {
@@ -28,6 +28,19 @@
 	font-size: 2.2vw;
 	padding: 0;
 	margin-top: 20%;
+}
+.inactive_btn {
+	-webkit-filter: grayscale(60%); /* Safari */
+	filter: grayscale(60%);
+}
+.inactive_cat {
+	display: none;
+}
+.inactive_btn .menu-header {
+	color: #d2d2d2;
+}
+.category_menu:hover {
+	cursor: pointer;
 }
 .desktop-header-1 {
 	background-size: cover;
