@@ -16,6 +16,10 @@
     padding: 0px;
 }
 
+#contact_content > div:nth-child(1) {
+	margin-top: 10px;
+}
+
 .btn-gray {
 	margin: 10px 0;
 }

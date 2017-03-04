@@ -72,9 +72,7 @@ app.get('/index', function (req, res) {
 app.get('/about', function (req, res) {
     res.render('about');
 });
-app.get('/menu', function (req, res) {
-    res.render('menu');
-});
+app.get('/menu', menu.view);
 app.get('/cater', function (req, res) {
     res.render('cater');
 });

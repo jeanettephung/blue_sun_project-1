@@ -3,245 +3,63 @@
 
 <!-- MENU MOBILE -->
 <div class="container" id="menu_mobile">
-<div class="menu-section">	
-	<div class="menu-header-img col-xs-12" id="header1" data-toggle="collapse" data-target="#cat1">
-		<div class="menu-header col-xs-12">
-			Menu Category
-		</div>
-	</div>
-	<div class="menu-container">
-		<div id="cat1" class="menu-category collapse">
-			<div class="menu-col menu-left col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
+	<div class="menu-section">
+		{{#each this}}
+		{{#if category}}
+			<div class="menu-header-img col-xs-12" id="{{header_id}}" data-toggle="collapse" data-target="#{{menu_id}}">
+				<div class="menu-header col-xs-12">
+					{{category}}
 				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
+			</div>
+			<div class="menu-container">
+				<div id="{{menu_id}}" class="menu-category collapse">
+					<div class="menu-col menu-left col-sm-6 col-xs-12">
+						{{#each items}}
+						{{#if left}}
+							<div class="menu-item">
+								<div class="row">
+									<div class="item-name col-xs-10">
+										{{name}}
+									</div>
+									<div class="item-price col-xs-2">
+										{{price}}
+									</div>
+								</div>
+								<div class="row">
+									<div class="item-description col-xs-12">
+										{{description}}
+									</div>
+								</div>
+							</div>
+						{{/if}}
+						{{/each}}
 					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
+					<div class="menu-col menu-right col-sm-6 col-xs-12">
+						{{#each items}}
+						{{#unless left}}
+							<div class="menu-item">
+								<div class="row">
+									<div class="item-name col-xs-10">
+										{{name}}
+									</div>
+									<div class="item-price col-xs-2">
+										{{price}}
+									</div>
+								</div>
+								<div class="row">
+									<div class="item-description col-xs-12">
+										{{description}}
+									</div>
+								</div>
+							</div>
+						{{/unless}}
+						{{/each}}
 					</div>
 				</div>
 			</div>
-			<div class="menu-col menu-right col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name </div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item last-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>			
-<!-- MENU SECTION END -->
-<!-- MENU SECTION -->
-<div class="menu-section">	
-	<div class="menu-header-img col-xs-12" id="header2" data-toggle="collapse" data-target="#cat2">
-		<div class="menu-header col-xs-12">
-			Menu Category
-		</div>
-	</div>
-	<div class="menu-container">
-		<div id="cat2" class="menu-category collapse">
-			<div class="menu-col menu-left col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu-col menu-right col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name </div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item last-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>			
-<!-- MENU SECTION END -->
-<!-- MENU SECTION -->
-<div class="menu-section">	
-	<div class="menu-header-img col-xs-12" id="header3" data-toggle="collapse" data-target="#cat3">
-		<div class="menu-header col-xs-12">
-			Menu Category
-		</div>
-	</div>
-	<div class="menu-container">
-		<div id="cat3" class="menu-category collapse">
-			<div class="menu-col menu-left col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu-col menu-right col-sm-6 col-xs-12">
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name </div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-				<div class="menu-item last-item">
-					<div class="row">
-						<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-						<div class="item-price col-xs-2">$10</div>
-					</div>
-					<div class="row">
-						<div class="item-description col-xs-12">some short description</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>			
-<!-- MENU SECTION END -->
+		{{/if}}
+		{{/each}}
+	</div>			
 </div>
 
 <!-- MENU DESKTOP -->
@@ -251,14 +69,14 @@
 			<div id="menu_cat1" class="category_menu col-xs-6">
 				<div class="desktop-header-1 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Starters
 					</div>
 				</div>
 			</div>
 			<div id="menu_cat2" class="category_menu col-xs-6">
 				<div class="desktop-header-2 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Beef, Pork &amp Chicken
 					</div>
 				</div>
 			</div>
@@ -267,14 +85,14 @@
 			<div id="menu_cat3" class="category_menu col-xs-6">
 				<div class="desktop-header-3 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Vegetarian Entrees
 					</div>
 				</div>
 			</div>
 			<div id="menu_cat4" class="category_menu col-xs-6">
 				<div class="desktop-header-4 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Red Moon Specialties
 					</div>
 				</div>
 			</div>
@@ -283,438 +101,67 @@
 			<div id="menu_cat5" class="category_menu col-xs-6">
 				<div class="desktop-header-5 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Noodles and Rice
 					</div>
 				</div>
 			</div>
 			<div id="menu_cat6" class="category_menu col-xs-6">
 				<div class="desktop-header-6 desktop-header-img col-xs-12">
 					<div class="menu-header col-xs-12">
-						Menu Category
+						Drinks and Sides
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div id="menu_col1" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu1 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
+	{{#each this}}
+	{{#if category}}
+		<div id="{{desktop_id}}" class="col-xs-offset-1 col-xs-7 menu-cat">
+			<div class="menu-col menu-left col-xs-6">
+				{{#each items}}
+				{{#if left}}
+					<div class="menu-item">
+						<div class="row">
+							<div class="item-name col-xs-10">
+								{{name}}
+							</div>
+							<div class="item-price col-xs-2">
+								{{price}}
+							</div>
+						</div>
+						<div class="row">
+							<div class="item-description col-xs-12">
+								{{description}}
+							</div>
+						</div>
+					</div>
+				{{/if}}
+				{{/each}}
 			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
+			<div class="menu-col menu-right col-xs-6">
+				{{#each items}}
+				{{#unless left}}
+					<div class="menu-item">
+						<div class="row">
+							<div class="item-name col-xs-10">
+								{{name}}
+							</div>
+							<div class="item-price col-xs-2">
+								{{price}}
+							</div>
+						</div>
+						<div class="row">
+							<div class="item-description col-xs-12">
+								{{description}}
+							</div>
+						</div>
+					</div>
+				{{/unless}}
+				{{/each}}
 			</div>
 		</div>
-	</div>
-	
-	<div id="menu_col2" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu2 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="menu_col3" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu3 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="menu_col4" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu4 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="menu_col5" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu5 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="menu_col6" class="col-xs-offset-1 col-xs-7 menu-cat">
-		<div class="menu-col menu-left col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu6 name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-		<div class="menu-col menu-right col-xs-6">
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name </div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-			<div class="menu-item last-item">
-				<div class="row">
-					<div class="item-name col-xs-10">menu name name name name name name name name name name</div>
-					<div class="item-price col-xs-2">$10</div>
-				</div>
-				<div class="row">
-					<div class="item-description col-xs-12">some short description</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	{{/if}}
+	{{/each}}
 	
 </div>
