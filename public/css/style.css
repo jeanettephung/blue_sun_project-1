@@ -6,7 +6,7 @@
 
 .btn-gray { 
   color: #FFFFFF; 
-  background-color: #3B3B3B; 
+  background-color: #3B3B3B;
   border-color: #3B3B3B; 
 } 
 
@@ -114,9 +114,9 @@ ul.nav a:hover {
 
 .active_page a {
     color: #840a11 !important;
-	  font-size: 25px;
-		font-weight: bolder;
-	  bottom: 4px;
+	  /*font-size: 25px;*/
+      font-weight: bolder;
+	  /*bottom: 4px;*/
 }
 .top-strip {
     z-index: 100;

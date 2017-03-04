@@ -174,11 +174,12 @@ html, body {
 }
 .social .facebook:hover {
 	border: 2px solid #2c3e50;
-	background: #2c3e50;
+	background-color: #3b5998;
+	color: #3b5998;
 }
 .social .yelp:hover {
 	border: 2px solid #be2020;
-	background: #be2020;
+	background: #d32323;
 }
 .social li a i {
 	font-size: 16px;

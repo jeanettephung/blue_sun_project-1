@@ -30,8 +30,8 @@
 	margin-top: 20%;
 }
 .inactive_btn {
-	-webkit-filter: grayscale(60%); /* Safari */
-	filter: grayscale(60%);
+	-webkit-filter: grayscale(90%); /* Safari */
+	filter: grayscale(90%);
 }
 .inactive_cat {
 	display: none;
