@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 	function refresh() {
 		$('.menu-cat').each(function() { 
-			$(this).removeClass('active').addClass('inactive_cat');
+			$(this).addClass('inactive_cat');
 		});
 		$('.category_menu').each(function() { 
-			$(this).addClass('inactive_btn');
+			$(this).removeClass('active').addClass('inactive_btn');
 		});
 	}
 	

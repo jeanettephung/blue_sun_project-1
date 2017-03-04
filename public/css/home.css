@@ -31,6 +31,7 @@
 
 #hours {
 	text-align: center;
+	padding-right: 0;
 }
 
 #hours .day {
