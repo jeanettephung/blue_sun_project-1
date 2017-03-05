@@ -32,7 +32,6 @@ $(document).ready(function(){
 		target = "#"+menu[1]['id'];
 		console.log(target);
     $(target).collapse("hide");
-		scrollTop(target);
 	});
 	
 	// highlight menu on hover

@@ -1,12 +1,11 @@
 .border-between > [class*='col-']:before {
-	background: #e3e3e3;
+	background: white;
 	bottom: 0;
 	content: " ";
 	left: 0;
 	position: absolute;
-	width: 1px;
+	width: 5px;
 	top: 0;
-
 }
 .border-between > [class*='col-']:first-child:before {
   display: none;
@@ -26,6 +25,8 @@
 }
 
 .row.border-between {
+	background-color: #830A10;
+	color: white;
 	margin: 0;
 }
 
@@ -59,6 +60,7 @@
 
 #awardsCarousel > div {
 	height: 300px !important;
+	margin-top: 50px;
 }
 
 
