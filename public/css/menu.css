@@ -10,9 +10,14 @@
 	}
 }
 
+a.close_menu {
+	color: #830a10;
+	margin-bottom: 30px;
+}
+
 /* DESKTOP */
 #menu_desktop .menu-col .item-name, #menu_desktop .menu-col .item-price {
-	background-color: white !important;
+	background-color: transparent!important;
 }
 #menu_desktop .menu-left {
 	padding-right: 30px;
@@ -122,7 +127,7 @@
 	font-size: 70px;
 	align-self: center;
 	text-align: center;
-	text-shadow: 3px 4px 5px #000;
+	text-shadow: rgb(3, 3, 3) 0px 0px 21px;
 	color: white;
 	font-weight: bold;
 }
@@ -159,17 +164,17 @@
 	padding: 0 15px !important;
 }
 .item-name, .item-price {	
-	color: rgba(84, 84, 84, 0.84);
+	color: rgba(49, 49, 49, 0.84);
 	font-family: "aleo-regular", arial;
 	font-size: 16px;
 	margin: 0;
-	background: rgb(237, 234, 229);
+	background: transparent;
 	padding: 0;
 	letter-spacing: .5px;
 	font-weight: normal;
 }
 .item-description {
-	color: #a2a0a0;
+	color: #695959;
 	font-family: "aleo-italic", arial;
 	font-size: 12px;
 	font-style: italic;

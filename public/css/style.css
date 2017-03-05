@@ -19,7 +19,7 @@
 	background-image: url('/img/bamboo.jpg');
 	background-attachment: fixed;
 	background-size: 100%;
-	opacity: 0.75;
+	opacity: 0.60;
 	z-index: -1;
 }
 
@@ -110,7 +110,7 @@
     background-image: url("/img/bamboo.jpg"); 
     width: 100%;
     height: 100%;
-    opacity : 0.75;
+    opacity : 0.60;
     z-index: -1;
 }
 
