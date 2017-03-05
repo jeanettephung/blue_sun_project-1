@@ -31,7 +31,7 @@
 	padding: 0;
 }
 .category_menu .desktop-header-img .menu-header {
-	font-size: 2.2vw;
+	font-size: 2.0vw;
 	padding: 0;
 	margin-top: 20%;
 }
@@ -51,29 +51,28 @@
 .category_menu:hover {
 	cursor: pointer;
 }
-.desktop-header-1 {
+.desktop-header-img {
 	background-size: cover;
-	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+	background-repeat: none;
+	background-position: center;	
+}
+.desktop-header-1 {
+	background-image: url("/img/starters_chicken_wings.png");
 }
 .desktop-header-2 {
-	background-size: cover;
-	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+	background-image: url("/img/beef_chicken_with_green_beans.png");
 }
 .desktop-header-3 {
-	background-size: cover;
-	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
+	background-image: url("/img/mapo_tofu.png");
 }
 .desktop-header-4 {
-	background-size: cover;
-	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+	background-image: url("/img/specialty_honey_walnut_shrimp.png");
 }
 .desktop-header-5 {
-	background-size: cover;
-	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+	background-image: url("/img/tan_tan_chopsticks.png");
 }
 .desktop-header-6 {
-	background-size: cover;
-	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
+	background-image: url("/img/drinks.png");
 }
 
 /* MOBILE */
@@ -181,13 +180,26 @@
 
 
 #header1 {
-	background-image: url("http://static.seriouseats.com/1/live/pages/chinese-food-nyc/650px/sit-downs-cafe-china-flickr-garrett-ziegler.jpg");
+	background-image: url("/img/starters_chicken_wings.png");
 }
 
 #header2 {
-	background-image: url("https://img.clipartfox.com/b8de7ba511b2c3a9ab7480aafb69aaca_jade-inn-chinese-food-chinese-food_625-350.jpeg");
+	background-image: url("/img/beef_chicken_with_green_beans.png");
 }
 
 #header3 {
-	background-image: url("http://chinastarrestaurantsalem.com/custom/1.jpg");
+	background-image: url("/img/mapo_tofu.png");
+}
+
+#header4 {
+	background-image: url("/img/specialty_honey_walnut_shrimp.png");background-position: center;
+}
+
+#header5 {
+	background-image: url("/img/tan_tan_chopsticks.png");
+	background-position: 0px -16px;
+}
+
+#header6 {
+	background-image: url("/img/drinks.png");
 }

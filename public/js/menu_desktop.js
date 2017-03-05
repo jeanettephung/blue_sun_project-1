@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// remove all classes (active)
 	function refresh() {
 		$('.menu-cat').each(function() { 
 			$(this).addClass('inactive_cat');
@@ -9,11 +10,32 @@ $(document).ready(function(){
 		});
 	}
 	
+	// initially makes first menu active
 	function select(category, menu) {
 		$(category).removeClass('inactive_btn').addClass('active');
 		$(menu).removeClass('inactive_cat');
 	}
 	
+	// onclick, scroll menu to top
+	function scrollTop(menu) {
+		$(menu).click(function() {
+			$('html, body').animate({
+					scrollTop: $(this).offset().top - $('#main').height() - $(".top-strip").height() }, 800);
+		});
+	}
+	scrollTop(".menu-header-img");
+	
+	// close menu onclick
+	$('a.close_menu').on('click', function(event){
+		event.preventDefault();
+		var menu = $(this).parentsUntil("menu-header-img");
+		target = "#"+menu[1]['id'];
+		console.log(target);
+    $(target).collapse("hide");
+		scrollTop(target);
+	});
+	
+	// highlight menu on hover
 	$(".category_menu")
   .mouseenter(function() {
 		$(this).removeClass('inactive_btn');
@@ -24,6 +46,7 @@ $(document).ready(function(){
 		}  
 	});
 	
+	// onclick menu, corresponding menu items displayed
 	refresh();
 	select("#menu_cat1", "#menu_col1");
 	
