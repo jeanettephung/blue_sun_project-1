@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	//set height of border
-	$( window ).resize(function() {
+	function borderHeight() {
 		var height = $(".row.border-between").height();
 		var result = height+"px";
 
@@ -10,5 +10,11 @@ $(document).ready(function(){
 		} else {
 			$("#home").append("<style>.border-between > [class*='col-']:before {height: "+result+";}</style>");
 		}
+	}
+	
+	// set height of border on page load and resize
+	borderHeight();
+	$( window ).resize(function() {
+		borderHeight();
 	});
 });
