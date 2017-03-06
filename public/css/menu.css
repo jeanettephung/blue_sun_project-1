@@ -56,6 +56,28 @@ a.close_menu {
 .category_menu:hover {
 	cursor: pointer;
 }
+.cat-header-img {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 55%;
+	height: 23%;
+	background-image: url('/img/bamboo_transparent.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	z-index: -1;
+}
+.cat-header {
+	color: #830a10;
+	position: fixed;
+	z-index: 10;
+}
+.menu-scroll {
+	width: 100%;
+	padding-top: 60px;
+	z-index: 5;
+	overflow: auto;
+}
 .desktop-header-img {
 	background-size: cover;
 	background-repeat: none;
@@ -115,7 +137,6 @@ a.close_menu {
 }
 @media screen and (min-width: 480px) {
 	.menu-header-img {
-/*		background-size: 70% 170%;*/
 		background-position: center;
 	}
 }
@@ -153,6 +174,7 @@ a.close_menu {
 }
 .menu-col {
 	margin-bottom: 50px;
+	    
 }
 .menu-item {
 	margin-top: 50px;
@@ -164,7 +186,7 @@ a.close_menu {
 	padding: 0 15px !important;
 }
 .item-name, .item-price {	
-	color: rgba(49, 49, 49, 0.84);
+	color: rgba(49, 49, 49);
 	font-family: "aleo-regular", arial;
 	font-size: 16px;
 	margin: 0;
@@ -174,7 +196,7 @@ a.close_menu {
 	font-weight: normal;
 }
 .item-description {
-	color: #695959;
+	color: #4c4545;
 	font-family: "aleo-italic", arial;
 	font-size: 12px;
 	font-style: italic;

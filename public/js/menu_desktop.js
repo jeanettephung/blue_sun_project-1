@@ -16,7 +16,12 @@ $(document).ready(function(){
 		$(menu).removeClass('inactive_cat');
 	}
 	
-	// onclick, scroll menu to top
+	// onclick, scroll to top (desktop)
+	$(".category_menu").click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+	
+	// onclick, scroll menu to top (mobile)
 	function scrollTop(menu) {
 		$(menu).click(function() {
 			$('html, body').animate({
