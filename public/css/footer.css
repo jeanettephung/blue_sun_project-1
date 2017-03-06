@@ -42,6 +42,9 @@ html, body {
 #footer, #about:after {
   height: 250px; 
 }
+#footer {
+	z-index: 999;
+}
 
 
 /* ORIGINAL CSS */
