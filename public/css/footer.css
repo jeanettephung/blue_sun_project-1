@@ -33,8 +33,13 @@
 * {
   margin: 0;
 }
-html, body {
-  height: 100%;
+html {
+  height: 88%;
+}
+body {
+	position: relative;
+  padding-bottom: 12%;
+  min-height: 100%;
 }
 #about {
   min-height: 100%;
@@ -67,17 +72,7 @@ html, body {
 	clear: both;
 	display: block;
 }
-/*
-.footer {
-	background: #EDEFF1;
-	height: auto;
-	padding-bottom: 30px;
-	position: relative;
-	width: 100%;
-	border-bottom: 1px solid #CCCCCC;
-	border-top: 1px solid #DDDDDD;
-}
-*/
+
 .footer {
 	color: white;
 	background: #830a10;
@@ -87,6 +82,10 @@ html, body {
 	width: 100%;
 	border-bottom: 1px solid #58080c;
   border-top: 1px solid #750c11;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .footer p {
 	margin: 0;
@@ -231,4 +230,12 @@ html, body {
 }
 #return-to-top:hover {
 	text-decoration: none;
+}
+
+#to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  width: 60px;
+	z-index: 999;
 }
