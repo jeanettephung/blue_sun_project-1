@@ -27,7 +27,7 @@
 			{
 				"name": "Crispy Shrimp Roll (4)",
 				"description": "",
-				"price": "$6.45",
+				"price": "$6.75",
 				"left": false
 			},
 			{
@@ -156,79 +156,85 @@
 			{
 				"name": "Salt & Pepper Shrimp",
 				"description": "Deep fried crispy, sautéed with fresh jalapeño and green onion",
-				"price": "$11.50",
+				"price": "$12.45",
 				"left": true
 			},
 			{
 				"name": "Seafood Clay Pot",
 				"description": "Shrimp, fish filet, and calamari with assorted vegetables in an oyster sauce",
-				"price": "$11.95",
+				"price": "$13.25",
 				"left": true
 			},
 			{
 				"name": "Kon Pao San Yan",
 				"description": "Shrimp, white meat chicken and beef in a spicy sauce with peanuts",
-				"price": "$11.25",
+				"price": "$12.45",
 				"left": true
 			},
 			{
 				"name": "Honey Walnut Shrimp",
 				"description": "Tender shrimp fried in a light batter, sautéed in a creamy seafood sauce and crunchy honey walnuts",
-				"price": "$11.50",
+				"price": "$12.45",
 				"left": true
 			},
 			{
 				"name": "Red Moon Chicken",
 				"description": "Slices of white meat chicken sautéed with vegetables in a spicy brown sauce",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": true
 			},
 			{
 				"name": "Red Moon Beef",
 				"description": "Slices of crispy beef sautéed with tangerine peel in the chef's special sauce",
-				"price": "$9.50",
+				"price": "$10.25",
+				"left": true
+			},
+			{
+				"name": "Crispy Garlic Chicken",
+				"description": "White meat chicken fried in a light batter served with assorted vegetables in a spicy garlic sauce",
+				"price": "$9.95",
 				"left": true
 			},
 			{
 				"name": "Thai Spicy Chicken",
 				"description": "White meat chicken in a spicy sauce with fresh basil",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": true
 			},
 			{
 				"name": "Salt & Pepper Pork Chop",
 				"description": "Deep fried crispy, sautéed with fresh jalapeño and green onion",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": false
 			},
 			{
 				"name": "Spicy Beef",
 				"description": "Slices of tender beef assorted vegetables sautéed in a spicy sauce",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": false
 			},
 			{
 				"name": "Sweet & Pungent Shrimp",
 				"description": "Tender shrimp fried in a light batter, sautéed in sweet & pungent sauce",
-				"price": "$11.50",
+				"price": "$12.45",
 				"left": false
 			},
 			{
 				"name": "Pan Fried Fish FIlet or Steam Fish Filet",
 				"description": "Ginger and onion sauce",
-				"price": "$12.95",
+				"price": "$13.95",
 				"left": false
 			},
 			{
 				"name": "Black Pepper Beef",
 				"description": "Slices of tender beef with assorted vegetables, sautéed with chef's special black pepper sauce",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": false
 			},
 			{
 				"name": "Sweet & Pungent Chicken",
 				"description": "Slices of tender chicken breasts fried in a light batter, sautéed in sweet & pungent sauce",
-				"price": "$9.25",
+				"price": "$9.95",
 				"left": false
 			}
 		]
@@ -249,73 +255,73 @@
 			{
 				"name": "Tantan Noodles",
 				"description": "Spicy sesame flavor, in a ground pork meat sauce",
-				"price": "$7.50",
+				"price": "$8.45",
 				"left": true
 			},
 			{
 				"name": "Mandarin Style Meat Sauce Noodle",
 				"description": "Ground pork meat sauce noodle",
-				"price": "$7.50",
+				"price": "$8.45",
 				"left": true
 			},
 			{
 				"name": "Champon Soup Noodles",
 				"description": "Assorted chef's special noodles soup",
-				"price": "$8.50",
+				"price": "$9.45",
 				"left": true
 			},
 			{
 				"name": "Assorted or Shrimp Pan Fried Noodles",
 				"description": "",
-				"price": "$8.95",
+				"price": "$9.95",
 				"left": true
 			},
 			{
 				"name": "Chicken or Beef Pan Fried Noodle",
 				"description": "",
-				"price": "$8.50",
+				"price": "$9.25",
 				"left": true
 			},
 			{
 				"name": "Assorted or Shrimp Chao Men",
 				"description": "",
-				"price": "$8.95",
+				"price": "$9.95",
 				"left": true
 			},
 			{
 				"name": "Assorted Soup Noodles",
 				"description": "",
-				"price": "$8.95",
+				"price": "$9.95",
 				"left": false
 			},
 			{
 				"name": "Singapore Style Noodles",
 				"description": "Rice thin noodle in a curry flavor sauce",
-				"price": "$8.95",
+				"price": "$9.45",
 				"left": false
 			},
 			{
 				"name": "Yakisoba Stir Fried Noodles With Vegetables in Yakisoba Sauce",
 				"description": "Assorted or Shrimp Chicken or Beef Vegetable Yakisoba, or Vegetable Noodles",
-				"price": "$8.95 8.25 7.95",
+				"price": "$9.95 9.25 8.95",
 				"left": false
 			},
 			{
 				"name": "House Fried Rice or Shrimp Fried Rice",
 				"description": "",
-				"price": "$8.95",
+				"price": "$9.95",
 				"left": false
 			},
 			{
 				"name": "Chicken or Beef Fried Rice",
 				"description": "",
-				"price": "$8.25",
+				"price": "$9.25",
 				"left": false
 			},
 			{
 				"name": "Rice Cake with Pork",
 				"description": "",
-				"price": "$8.95",
+				"price": "$9.45",
 				"left": false
 			}
 		]	
@@ -330,31 +336,37 @@
 			{
 				"name": "Steamed Rice",
 				"description": "",
-				"price": "$1.00",
+				"price": "$1.50",
 				"left": true
 			},
 			{
 				"name": "Miso Soup",
-				"description": "",
-				"price": "$1.50",
+				"description": "Cup or Bowl",
+				"price": "$2.25 or $7.25",
 				"left": true
 			},
 			{
 				"name": "Egg Drop Soup",
-				"description": "",
-				"price": "$1.50",
+				"description": "Cup or Bowl",
+				"price": "$2.25 or $7.25",
 				"left": true
 			},
 			{
+				"name": "Hot & Sour Soup",
+				"description": "Bowl",
+				"price": "$8.25",
+				"left": false
+			},
+			{
 				"name": "Soft Drink Iced Milk Tea",
-				"description": "",
-				"price": "$2.95",
+				"description": "Bowl",
+				"price": "$3.45",
 				"left": false
 			},
 			{
 				"name": "Coke, Diet Coke, Arizona Iced Tea, Sprite, BTL Water",
 				"description": "",
-				"price": "$1.50",
+				"price": "$1.95",
 				"left": false
 			}
 		]

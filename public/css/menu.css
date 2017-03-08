@@ -52,7 +52,8 @@ a.close_menu {
 	display: none;
 }
 .inactive_btn .menu-header {
-	color: #d2d2d2;
+	color: #ffffff;
+	text-shadow: rgb(3, 3, 3) 5px -4px 6px;
 }
 .category_menu:hover {
 	cursor: pointer;
@@ -63,7 +64,7 @@ a.close_menu {
 	right: 0;
 	width: 60%;
 	height: 20%;
-	background-image: url('/img/bamboo_transparent.jpg');
+	background-color: white;
 	background-attachment: fixed;
 	background-size: 100%;
 	z-index: -1;
@@ -163,7 +164,7 @@ a.close_menu {
 	font-size: 70px;
 	align-self: center;
 	text-align: center;
-	text-shadow: rgb(3, 3, 3) 0px 0px 21px;
+	text-shadow: rgb(3, 3, 3) 5px -4px 6px;
 	color: white;
 	font-weight: bold;
 }
@@ -193,6 +194,11 @@ a.close_menu {
 }
 .menu-item {
 	margin-top: 50px;
+}
+@media screen and (max-width: 480px) {
+	.menu-item {
+	margin-top: 25px;
+}
 }
 .last-item {
 	margin-bottom: 50px;
