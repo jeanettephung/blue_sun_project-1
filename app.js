@@ -23,8 +23,8 @@ var app = express();
 //yelp api call
 //var Yelp = require('yelp');
 
-var Yelp = require('node-yelp-fusion');
-var yelp=new Yelp({ id:'jc6LBOrY9Y2ovxr0UIBbDw', secret:'sNsySmlXXSLoP2rg9jWwHe4lAKKa6qHnWYXSSWXqfIex6o1MRzTdcl7qlMDtuk6j'});
+//var Yelp = require('node-yelp-fusion');
+//var yelp=new Yelp({ id:'jc6LBOrY9Y2ovxr0UIBbDw', secret:'sNsySmlXXSLoP2rg9jWwHe4lAKKa6qHnWYXSSWXqfIex6o1MRzTdcl7qlMDtuk6j'});
 /*var yelp = new Yelp({
     consumer_key: 'consumer-key',
     consumer_secret: 'consumer-secret',
@@ -51,11 +51,11 @@ app.set('view engine', 'handlebars');
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-yelp.reviews("red-moon-noodle-house-san-diego")
+/*yelp.reviews("red-moon-noodle-house-san-diego")
     .then(function(result){
         console.log(result);
         res.json(result);
-    });
+    });*/
 
 
 // development only
