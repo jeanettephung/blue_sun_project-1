@@ -22,7 +22,7 @@ var app = express();
 
 //yelp api call
 //var Yelp = require('yelp');
-var Promise = require('promise');
+
 var Yelp = require('node-yelp-fusion');
 var yelp=new Yelp({ id:'jc6LBOrY9Y2ovxr0UIBbDw', secret:'sNsySmlXXSLoP2rg9jWwHe4lAKKa6qHnWYXSSWXqfIex6o1MRzTdcl7qlMDtuk6j'});
 /*var yelp = new Yelp({
