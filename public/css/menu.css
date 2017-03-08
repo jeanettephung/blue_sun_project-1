@@ -30,7 +30,7 @@ a.close_menu {
 	height: 150px;
 }
 #category_col {
-	margin-top: 50px;
+	margin-top: 60px;
 	z-index: 60;
 }
 #category_col .category_menu {
@@ -62,7 +62,7 @@ a.close_menu {
 	top: 0;
 	right: 0;
 	width: 60%;
-	height: 23%;
+	height: 20%;
 	background-image: url('/img/bamboo_transparent.jpg');
 	background-attachment: fixed;
 	background-size: 100%;
