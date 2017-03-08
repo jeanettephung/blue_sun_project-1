@@ -39,7 +39,11 @@ html, body {
   content: "";
   display: block;
 }
-#footer, #about:after {
+#footer {
+	height: 115px;
+}
+
+#about:after {
   height: 250px; 
 }
 #footer {
@@ -214,6 +218,11 @@ html, body {
 }
 .hvr-float:hover {
   transform: translateY(-8px);
+}
+#return-to-top {
+	color: rgb(59, 59, 59);
+	float: right;
+	margin-right: 20px;
 }
 #return-to-top:hover {
 	text-decoration: none;
