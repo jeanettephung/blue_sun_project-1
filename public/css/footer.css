@@ -41,6 +41,14 @@ body {
   padding-bottom: 12%;
   min-height: 100%;
 }
+@media screen and (max-width: 480px) {
+	body {
+	position: relative;
+  padding-bottom: 36%;
+  min-height: 100%;
+	}
+}
+
 #about {
   min-height: 100%;
   margin-bottom: -250px; 

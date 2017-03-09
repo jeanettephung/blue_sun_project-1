@@ -7,6 +7,14 @@ $(document).ready(function(){
 				} else {
 						$('#return-to-top').fadeOut(200);
 				}
+			
+			if($(window).scrollTop() + $(window).height() < $(document).height() - $("#footer").height()){
+					$('#return-to-top').css("position","fixed");    
+					$('#return-to-top').css("bottom","0"); 
+			 } else {
+					$('#return-to-top').css("position","relative"); 
+					$('#return-to-top').css("bottom","0px"); 
+			 }
 		});
 
 		$('#return-to-top').click(function() {
