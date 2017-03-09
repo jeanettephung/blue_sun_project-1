@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Mv Boli';
+  src: url('/fonts/mvboli.ttf')  format('truetype')
+}
+
+html, body {
+	font-family: 'Mv Boli';
+}
+
 .btn-redMoon { 
   color: #FFFFFF; 
   background-color: #840A11; 
