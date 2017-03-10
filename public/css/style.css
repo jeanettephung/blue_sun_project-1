@@ -19,8 +19,14 @@ html, body {
 .btn-redMoon.active, 
 .open .dropdown-toggle.btn-redMoon { 
   color: #ffffff; 
-  background-color: #A3151C; 
+  background-color: #B8252C; 
   border-color: #75060C; 
+} 
+ 
+.btn-redMoon:active, 
+.btn-redMoon.active, 
+.open .dropdown-toggle.btn-redMoon { 
+  background-image: none; 
 } 
 
 .btn-gray { 
@@ -47,7 +53,7 @@ html, body {
 	height: 100%;
 	background-image: url('/img/bamboo.jpg');
 	background-attachment: fixed;
-	background-size: 100%;
+	background-repeat: repeat;
 	opacity: 0.60;
 	z-index: -1;
 }
@@ -141,8 +147,7 @@ html, body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	border-color: transparent;
 	background-image: url("/img/bamboo.jpg"); 
 	width: 100%;
