@@ -22,7 +22,7 @@ body {
 	height: 500px;
 }
 #featuredCarousel > div {
-  height: 370px !important; 
+  height: 400px !important; 
 }
 
 @media screen and (max-width: 480px) {
