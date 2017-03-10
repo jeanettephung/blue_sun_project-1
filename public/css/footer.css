@@ -49,21 +49,10 @@ body {
 	}
 }
 
-#about {
-  min-height: 100%;
-  margin-bottom: -250px; 
-}
-#about:after {
-  content: "";
-  display: block;
-}
 #footer {
 	height: 115px;
 }
 
-#about:after {
-  height: 250px; 
-}
 #footer {
 	z-index: 999;
 }
