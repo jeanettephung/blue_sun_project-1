@@ -1,0 +1,267 @@
+/* MENU */
+@media (min-width: 797px) {
+	#menu_mobile { 
+		display: none;
+	}
+}
+@media (max-width: 797px) {
+	#menu_desktop { 
+		display: none;
+	}
+}
+
+a.close_menu {
+	color: #830a10;
+	margin-bottom: 30px;
+}
+
+/* DESKTOP */
+#menu_desktop .menu-col .item-name, #menu_desktop .menu-col .item-price {
+	background-color: transparent!important;
+}
+#menu_desktop .menu-left {
+	padding-right: 30px;
+}
+#menu_desktop .menu-right {
+	padding-left: 30px;
+}
+.desktop-header-img {
+	width: 100%;
+	height: 150px;
+}
+#category_col {
+	margin-top: 10px;
+	z-index: 60;
+}
+#category_col .category_menu {
+	padding: 0;
+}
+.category_menu .desktop-header-img .menu-header {
+	font-size: 2.0vw;
+	padding: 0;
+	margin-top: 20%;
+}
+.inactive_btn {
+	-webkit-filter: grayscale(90%); /* Safari */
+	filter: grayscale(90%);
+}
+.menu-cat {
+	height: 60vh;
+	overflow: scroll;
+	top: 60px;
+}
+.inactive_cat {
+	display: none;
+}
+.inactive_btn .menu-header {
+	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.category_menu:hover {
+	cursor: pointer;
+}
+.cat-header-img {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 60%;
+	height: 20%;
+	background-color: white;
+	background-attachment: fixed;
+	background-size: 100%;
+	z-index: -1;
+}
+.cat-header {
+	color: #830a10;
+	position: fixed;
+	z-index: 10;
+}
+.menu-scroll {
+	width: 100%;
+	padding-top: 0px;
+	z-index: 5;
+	overflow: auto;
+}
+.menu-scroll:before {
+	content : "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	opacity : 0.60;
+	z-index: -1;
+}
+.desktop-header-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.desktop-header-1 {
+	background-image: url("/img/starters_chicken_wings.png");
+}
+.desktop-header-2 {
+	background-image: url("/img/beef_chicken_with_green_beans.png");
+}
+.desktop-header-3 {
+	background-image: url("/img/mapo_tofu.png");
+}
+.desktop-header-4 {
+	background-image: url("/img/specialty_honey_walnut_shrimp.png");
+}
+.desktop-header-5 {
+	background-image: url("/img/tan_tan_chopsticks.png");
+}
+.desktop-header-6 {
+	background-image: url("/img/drinks.png");
+}
+
+/* MOBILE */
+#menu_mobile.container {
+	padding: 0 !important;
+	background-color: rgba(183, 168, 151, 0.25);
+}
+#menu_mobile .menu-container {
+	padding: 0px 20px 0px 5px;
+}
+@media screen and (max-width: 480px) {
+  .menu-header-img {
+		height: 160px !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	.menu-header {
+		font-size: 30px !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	.menu-col {
+		margin-bottom: 0px !important;
+	}
+}
+
+.menu_header {
+	font-size: 40px;
+}
+
+.menu-header-img {
+	height: 330px;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media screen and (min-width: 480px) {
+	.menu-header-img {
+		background-position: center;
+	}
+}
+.menu-header-img:hover {
+	cursor: pointer;
+}
+.menu-header {
+	font-family: "aleo-regular", arial;
+	font-size: 70px;
+	align-self: center;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.menu-right {
+	margin-bottom: 50px !important;
+}
+.menu-category {
+	 	margin-left: 2%;
+}
+@media screen and (max-width: 480px) {
+	.menu-category {
+		margin-left: 4%;
+	}
+}
+.menu-container {
+		width: 75%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+	.menu-container {
+		width: 100%;
+	}
+}
+.menu-col {
+	margin-bottom: 50px;
+	    
+}
+.menu-item {
+	margin-top: 50px;
+}
+@media screen and (max-width: 480px) {
+	.menu-item {
+	margin-top: 25px;
+}
+}
+.last-item {
+	margin-bottom: 50px;
+}
+.item-name {
+	padding: 0 15px !important;
+}
+.item-name, .item-price {	
+	color: rgba(49, 49, 49);
+	font-family: "aleo-regular", arial;
+	font-size: 16px;
+	margin: 0;
+	background: transparent;
+	padding: 0;
+	letter-spacing: .5px;
+	font-weight: normal;
+}
+.item-description {
+	color: #4c4545;
+	font-family: "aleo-italic", arial;
+	font-size: 12px;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	padding: 0 0 0 15px;
+}
+
+
+#header1 {
+	background-image: url("/img/starters_chicken_wings.png");
+}
+
+#header2 {
+	background-image: url("/img/beef_chicken_with_green_beans.png");
+}
+
+#header3 {
+	background-image: url("/img/mapo_tofu.png");
+}
+
+#header4 {
+	background-image: url("/img/specialty_honey_walnut_shrimp.png");background-position: center;
+}
+
+#header5 {
+	background-image: url("/img/tan_tan_chopsticks.png");
+	background-position: 0px -16px;
+}
+
+#header6 {
+	background-image: url("/img/drinks.png");
+}

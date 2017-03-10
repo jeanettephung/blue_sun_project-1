@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Mv Boli';
+  src: url('/fonts/mvboli.ttf')  format('truetype')
+}
+
+html, body {
+	font-family: 'Mv Boli';
+}
+
+.btn-redMoon { 
+  color: #ffffff; 
+  background-color: #840A11; 
+  border-color: #75060C; 
+} 
+ 
+.btn-redMoon:hover, 
+.btn-redMoon:focus, 
+.btn-redMoon:active, 
+.btn-redMoon.active, 
+.open .dropdown-toggle.btn-redMoon { 
+  color: #ffffff; 
+  background-color: #B8252C; 
+  border-color: #75060C; 
+} 
+ 
+.btn-redMoon:active, 
+.btn-redMoon.active, 
+.open .dropdown-toggle.btn-redMoon { 
+  background-image: none; 
+} 
+
+.btn-gray { 
+  color: #FFFFFF; 
+  background-color: #3B3B3B;
+  border-color: #3B3B3B; 
+} 
+.background_yellow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F2C88E;
+	background-attachment: fixed;
+	background-size: 100%;
+	z-index: -2;
+}
+.background_bamboo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/img/bamboo.jpg');
+	background-attachment: fixed;
+	background-repeat: repeat;
+	opacity: 0.60;
+	z-index: -1;
+}
+
+/* NAVIVATION BAR */
+#main {
+	z-index: 1000;
+}
+
+#nav_logo {
+	height: 65px;
+}
+
+@media (max-width: 480px) {
+  #nav_logo {
+    height: 55px;
+	}
+}
+
+.navbar-brand {
+	padding: 5px 10px 5px 15px;
+}
+
+@media (max-width: 845px) {
+  #nav_logo {
+		height: 55px;
+	}
+}
+
+.navbar-collapse.collapse.in ul li, .navbar-collapse.collapsing ul li {
+	text-align: center;
+	font-size: 25px;
+	margin: 20px;
+}
+
+.navbar-default {
+	font-size: 18px;
+	background-color: #F2C88E;
+	box-shadow: 0px -4px 15px 2px #000000;
+	-webkit-box-shadow: 0px -4px 15px 2px #000000;
+	-moz-box-shadow: 0px -4px 15px 2px #000000;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #840a11 !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #840a11 !important;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #840a11;
+}
+
+.navbar-nav>li>a {
+	line-height: 10px !important;
+}
+
+.navbar-right {
+	margin-right: 0px;
+  margin-top: 35px;
+}
+
+@media (max-width: 480px) {
+  .navbar-right {
+		margin-top: 0;
+	}
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+	margin-right: 25px;
+	border: none;
+}
+
+.navbar-toggle .icon-bar {
+	width: 30px;
+	height: 3px;
+}
+
+.navbar {
+	min-height: 65px !important;
+}
+
+.navbar-default:before {
+	content : "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: repeat;
+	border-color: transparent;
+	background-image: url("/img/bamboo.jpg"); 
+	width: 100%;
+	height: 100%;
+	opacity : 0.60;
+	z-index: -1;
+}
+
+/** STYLES **/
+body {
+	margin-top: 90px;
+	overflow-x: hidden;
+}
+
+.iframe-container{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+
+.iframe-container > *{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+ul.nav a:hover {
+	color: #ff0000 !important;
+	text-decoration: underline;
+}
+
+.active_page a {
+	color: #840a11 !important;
+	/*font-size: 25px;*/
+		font-weight: bolder;
+	/*bottom: 4px;*/
+}
+.top-strip {
+	z-index: 100;
+	position: fixed;
+	background-color: #830A10;
+	color: #fff;
+	/* font-family: ;*/
+	font-size: 8pt;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100%;
+	height: 23px;
+	top: 0;
+	line-height: 23px;
+	vertical-align: middle;
+	text-align: center;
+}
+.navbar-fixed-top{
+	top: 23px !important;
+}
+.navbar-default {
+	box-shadow: none;
+}
