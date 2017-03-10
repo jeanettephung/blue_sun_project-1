@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/cater.css">
+<script src="/js/cater.js"></script>
 
 <div id="cater">
 	<div class="container-fluid" id="cater-body">
@@ -10,24 +11,26 @@
 			<div id="cater_content" class="col-xs-12 col-md-6">
 				<center><h1>Catering Inquiry</h1></center>
 
-				<form  role="form">
-					<label>Name</label> 
-					<input class="form-control input-sm" type="text"> 
+				<form  role="form" data-toggle="validator">
+					<label>Name*</label>
+					<input class="form-control input-sm" id="name" type="text" required>
 
 					<label>Email</label> 
-					<input class="form-control input-sm" type="email"> 
+					<input class="form-control input-sm" id="email" type="email">
 
 					<label>Phone</label> 
-					<input class="form-control input-sm" type="text"> 
+					<input class="form-control input-sm" id="phone" type="text">
 
 					<label>Date of Event</label>
-					<input class="form-control input-sm" type="date">
+					<input class="form-control input-sm" id="date" type="date">
 
 					<label>Message:</label> 
 					<textarea class="form-control input-sm" id="message" name="message" rows="5"></textarea>
+                    <button id="cater_submit" class="btn btn-redMoon btn-md center-block">Send</button>
 
-					<button id="cater_submit" class="btn btn-redMoon btn-md center-block" type="submit">Send</button>
-				</form>		
+
+				</form>
+
 
 			</div>
 		</div>
