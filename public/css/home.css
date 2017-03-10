@@ -39,7 +39,7 @@ body {
 
 #hours {
 	text-align: center;
-	padding-right: 0;
+	padding: 0;
 }
 
 #hours .day {
@@ -53,6 +53,7 @@ body {
 
 #hours .time {
 	text-align: left;
+	padding-right: 0;
 }
 
 #hours-group {

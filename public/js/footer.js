@@ -11,9 +11,11 @@ $(document).ready(function(){
 			if($(window).scrollTop() + $(window).height() < $(document).height() - $("#footer").height()){
 					$('#return-to-top').css("position","fixed");    
 					$('#return-to-top').css("bottom","0"); 
+				 	$('#return-to-top').css("right","50px"); 
 			 } else {
 					$('#return-to-top').css("position","relative"); 
 					$('#return-to-top').css("bottom","0px"); 
+				 	$('#return-to-top').css("right","50px"); 
 			 }
 		});
 
