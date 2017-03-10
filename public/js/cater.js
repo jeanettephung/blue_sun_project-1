@@ -19,18 +19,22 @@ $(document).ready(function() {
         if ( name == ""){
             alert("Name must be filled out");
 
-        } else if (email =="" ) {
-            alert("Email must be filled out");
+        } else if  (  !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ) ) {
+            alert("You have entered an invalid email address!")
 
-        } else if (phone ==""){
+        } else if (isNaN(phone)){
             alert("Phone must be filled out and must only be numbers");
 
         } else if (date==""){
+            alert("date must be filled out and must only be numbers");
 
         } else if (message ==""){
             alert("Message must be filled out");
-
         }
+
+
+
+
 
         event.preventDefault();
 
