@@ -8,9 +8,19 @@ html, body {
 }
 
 .btn-redMoon { 
-  color: #FFFFFF; 
+  color: #ffffff; 
   background-color: #840A11; 
-  border-color: #75060c; 
+  border-color: #75060C; 
+} 
+ 
+.btn-redMoon:hover, 
+.btn-redMoon:focus, 
+.btn-redMoon:active, 
+.btn-redMoon.active, 
+.open .dropdown-toggle.btn-redMoon { 
+  color: #ffffff; 
+  background-color: #A3151C; 
+  border-color: #75060C; 
 } 
 
 .btn-gray { 
