@@ -26,14 +26,11 @@ $(document).ready(function() {
             alert("Phone must be filled out and must only be numbers");
 
         } else if (date==""){
-            alert("date must be filled out and must only be numbers");
+            alert("date must be filled out");
 
         } else if (message ==""){
             alert("Message must be filled out");
         }
-
-
-
 
 
         event.preventDefault();
