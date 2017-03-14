@@ -2,6 +2,10 @@
 	margin-top: 75px;
 }
 
+#about_content p {
+    font-size: medium;
+}
+
 #about_image {
 	padding: 0;
 }
