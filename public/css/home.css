@@ -78,6 +78,18 @@ body {
 	}
 }
 
+/*
+.item {
+	position: relative;
+}
+
+.item img {
+	position:absolute;
+  top: -110px;
+	width: 250%;
+}
+*/
+
 /* NEW */
 #carousel-reviews > .carousel-control.left, #carousel-reviews > .carousel-control.right  {background:none;width:25px;}
 #carousel-reviews > .left.carousel-control {left:-25px;}

@@ -199,7 +199,7 @@
 				"name": "Thai Spicy Chicken",
 				"description": "White meat chicken in a spicy sauce with fresh basil",
 				"price": "$9.95",
-				"left": true
+				"left": false
 			},
 			{
 				"name": "Salt & Pepper Pork Chop",

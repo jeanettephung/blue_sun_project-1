@@ -51,10 +51,9 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url('/img/bamboo.jpg');
+	background-image: url('/img/wood_bg.jpg');
 	background-attachment: fixed;
 	background-repeat: repeat;
-	opacity: 0.60;
 	z-index: -1;
 }
 
@@ -98,7 +97,7 @@ html, body {
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #840a11 !important;
+	color: #d4ac74 !important;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -139,6 +138,7 @@ html, body {
 
 .navbar {
 	min-height: 65px !important;
+	border-color: #830A10;
 }
 
 .navbar-default:before {
@@ -149,10 +149,10 @@ html, body {
 	left: 0;
 	background-repeat: repeat;
 	border-color: transparent;
-	background-image: url("/img/bamboo.jpg"); 
+	background-color: #830A10;
+	/* background-image: url("/img/wood_bg.jpg"); */
 	width: 100%;
 	height: 100%;
-	opacity : 0.60;
 	z-index: -1;
 }
 
@@ -194,7 +194,7 @@ ul.nav a:hover {
 .top-strip {
 	z-index: 100;
 	position: fixed;
-	background-color: #830A10;
+	background-color: #21140c;
 	color: #fff;
 	/* font-family: ;*/
 	font-size: 8pt;
