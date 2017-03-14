@@ -2,6 +2,11 @@
 	margin-top: 75px;
 }
 
+#chefimg {
+	overflow: scroll;
+  height: 73vh;
+}
+
 #about_content p {
     font-size: medium;
 }

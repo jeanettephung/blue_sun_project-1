@@ -97,17 +97,25 @@ html, body {
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #d4ac74 !important;
+	color: #d4ac74;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	color: #840a11 !important;
+	color: #fff !important;
 	text-decoration: none;
 	font-weight: bolder;
 }
 
+#grab_nav > li.active_page > a {
+	color: #fff !important;
+	text-shadow: -1px -1px 0 #000, 
+		1px -1px 0 #000, 
+		-1px 1px 0 #000, 
+		1px 1px 0 #000;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #840a11;
+	background-color: #d4ac74;
 }
 
 .navbar-nav>li>a {
@@ -129,6 +137,14 @@ html, body {
 	margin-top: 20px;
 	margin-right: 25px;
 	border: none;
+}
+
+@media (max-width: 480px) {
+	.navbar-toggle {
+		margin-top: 15px;
+		margin-right: 10px;
+		border: none;
+	}
 }
 
 .navbar-toggle .icon-bar {
@@ -188,7 +204,7 @@ ul.nav a:hover {
 .active_page a {
 	color: #840a11 !important;
 	/*font-size: 25px;*/
-		font-weight: bolder;
+	font-weight: bolder;
 	/*bottom: 4px;*/
 }
 .top-strip {
