@@ -2,9 +2,11 @@
 	margin-top: 75px;
 }
 
-#chefimg {
-	overflow: scroll;
-  height: 73vh;
+@media (max-width: 797px) {
+	#chefimg {
+		overflow: scroll;
+		height: 73vh;
+	}
 }
 
 #about_content p {
