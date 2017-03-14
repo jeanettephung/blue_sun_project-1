@@ -2,7 +2,7 @@
 	margin-top: 75px;
 }
 
-@media (max-width: 797px) {
+@media (max-width: 800px) {
 	#chefimg {
 		overflow: scroll;
 		height: 73vh;
@@ -24,6 +24,7 @@
 #chefimg {
     padding: 0px;
 }
+
 /*
 @media (max-width: 480px) {
   #about_content {
