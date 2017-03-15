@@ -15,13 +15,13 @@ $(document).click(function (event) {
         $navbar.collapse('hide');
     }
 
-    //gallery hover effect
-    $('.gallery .media img').hover(function(){
-        $('.gallery .media img').addClass('inactive');
-        $(this).removeClass('inactive').addClass('active');
-    }, function(){
-        $('.gallery .media img').removeClass('inactive');
-    });
+//    //gallery hover effect
+//    $('.gallery .media img').hover(function(){
+//        $('.gallery .media img').addClass('inactive');
+//        $(this).removeClass('inactive').addClass('active');
+//    }, function(){
+//        $('.gallery .media img').removeClass('inactive');
+//    });
 
 
 

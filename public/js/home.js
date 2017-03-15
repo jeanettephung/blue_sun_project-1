@@ -12,9 +12,30 @@ $(document).ready(function(){
 		}
 	}
 	
+	function headerHeight() {
+		var headerHeight = $("#featuredCarousel").height();
+		var itemHeight = $("#featuredCarousel .item.active img").height();
+		console.log("header: "+headerHeight);
+		console.log("item: "+itemHeight);
+		if (headerHeight > itemHeight) {
+			$('#featuredCarousel').css("height", itemHeight);
+		}
+		else if (itemHeight > headerHeight) {
+			$('#featuredCarousel').css("height", "450px");
+		}
+		else {
+			headerHeight = 450;
+		}
+	}
+	
 	// set height of border on page load and resize
 	borderHeight();
 	$( window ).resize(function() {
 		borderHeight();
+	});
+	
+	headerHeight();
+	$( window ).resize(function() {
+		headerHeight();
 	});
 });

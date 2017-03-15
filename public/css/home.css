@@ -22,7 +22,7 @@ body {
 	height: 500px;
 }
 #featuredCarousel > div {
-  height: 400px !important; 
+  height: 450px !important; 
 }
 
 @media screen and (max-width: 480px) {
@@ -40,6 +40,7 @@ body {
 #hours {
 	text-align: center;
 	padding: 0;
+	margin-bottom: 20px;
 }
 
 #hours .day {
@@ -63,7 +64,12 @@ body {
 
 #specials {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+#specials h3 {
+	width: 70%;
+	margin: 0 auto;
 }
 
 #awardsCarousel > div {
@@ -93,6 +99,13 @@ body {
 	}
 }
 
+#intro, #awards {
+	color: #d4ac74;
+	text-align: center;
+	width: 90%;
+	margin: 25px auto;
+}
+
 /* NEW */
 #carousel-reviews > .carousel-control.left, #carousel-reviews > .carousel-control.right  {background:none;width:25px;}
 #carousel-reviews > .left.carousel-control {left:-25px;}
@@ -107,6 +120,7 @@ body {
     margin-top: 27px;
     padding: 15px 18px;
 		text-align: center;
+		height: 390px;
 }
 
 .block-text p {
