@@ -21,16 +21,37 @@
 }
 
 #about_image img {
-	top: -100px;
 	height: auto;
 	width: 100%;
 	position: relative;
 }
 
-@media (max-width: 1090px) and (min-width: 700px) {
-	#about_image img  {
+@media screen and (min-width: 500px) {
+	#about_image img {
+		top: -60px;
 		width: 60%;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#about_image img {
+		top: 0px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#about_image img {
+		top: -100px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	#about_image img {
+		top: -150px !important;
+		width: 100% !important;
 	}
 }
 
