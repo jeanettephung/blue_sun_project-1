@@ -15,10 +15,28 @@
 
 #about_image {
 	padding: 0;
+	height: 60vh;
+  overflow: hidden;
+	position: relative;
+}
+
+#about_image img {
+	top: -100px;
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+@media (max-width: 1090px) and (min-width: 700px) {
+	#about_image img  {
+		width: 60%;
+		margin: 0 auto;
+	}
 }
 
 #about_content {
 	padding: 10px 40px 50px 40px;
+	text-align: center;
 }
 
 #chefimg {

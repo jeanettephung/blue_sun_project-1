@@ -4,7 +4,7 @@
 <!-- MENU MOBILE -->
 <div class="container" id="menu_mobile">
 	<div class="menu-section">
-		{{#each this}}
+		{{#each mobile}}
 		{{#if category}}
 			<div class="menu-header-img col-xs-12" id="{{header_id}}" data-toggle="collapse" data-target="#{{menu_id}}">
 				<div class="menu-header col-xs-12">
@@ -117,56 +117,43 @@
 		</div>
 	</div>
 	
-	{{#each this}}
+	{{#each desktop}}
 	{{#if category}}
-		<div id="{{desktop_id}}" class="col-xs-offset-5 col-xs-7 menu-cat">
-			<div class="col-xs-6 affix cat-header">
+		<div id="{{desktop_id}}" class="col-xs-offset-6 col-xs-6 menu-cat">
+			<div class="col-xs-5 affix cat-header">
 				<div class="cat-header-img"></div>
 				<center><h1>{{category}}</h1></center>
 			</div>
 			<div class="col-xs-12 menu-scroll">
-				<div class="menu-col menu-left col-xs-6">
-					{{#each items}}
-					{{#if left}}
-						<div class="menu-item">
-							<div class="row">
-								<div class="item-name col-xs-10">
-									{{name}}
-								</div>
-								<div class="item-price col-xs-2">
-									{{price}}
-								</div>
+					{{#each row}}
+						<div class="row">
+
+						<div class="menu-item col-xs-6">
+							<div class="item-name col-xs-12">
+								{{first.name}}
 							</div>
-							<div class="row">
-								<div class="item-description col-xs-12">
-									{{description}}
-								</div>
+							<div class="item-description col-xs-12">
+								{{first.description}}
+							</div>
+							<div class="item-price col-xs-12">
+								{{first.price}}
 							</div>
 						</div>
-					{{/if}}
-					{{/each}}
-				</div>
-				<div class="menu-col menu-right col-xs-6">
-					{{#each items}}
-					{{#unless left}}
-						<div class="menu-item">
-							<div class="row">
-								<div class="item-name col-xs-10">
-									{{name}}
-								</div>
-								<div class="item-price col-xs-2">
-									{{price}}
-								</div>
+					
+						<div class="menu-item col-xs-offset-1 col-xs-5">
+							<div class="item-name col-xs-12">
+								{{second.name}}
 							</div>
-							<div class="row">
-								<div class="item-description col-xs-12">
-									{{description}}
-								</div>
+							<div class="item-description col-xs-12">
+								{{second.description}}
+							</div>
+							<div class="item-price col-xs-12">
+								{{second.price}}
 							</div>
 						</div>
-					{{/unless}}
-					{{/each}}
-				</div>
+					</div>
+				{{/each}}
+
 			</div>
 		</div>
 	{{/if}}

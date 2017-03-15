@@ -225,12 +225,13 @@ a.close_menu {
 	    
 }
 .menu-item {
-	margin-top: 50px;
+	margin-top: 20px;
+	padding: none;
 }
 @media screen and (max-width: 480px) {
 	.menu-item {
-	margin-top: 25px;
-}
+		margin-top: 25px;
+	}
 }
 .last-item {
 	margin-bottom: 50px;
@@ -244,10 +245,16 @@ a.close_menu {
 	font-size: 16px;
 	margin: 0;
 	background: transparent;
-	padding: 0;
 	letter-spacing: .5px;
 	font-weight: normal;
 }
+
+@media screen and (max-width: 480px) {
+	.item-price {
+		padding: 0px;
+	}
+}
+
 .item-description {
 	color: #4c4545;
 	font-family: "aleo-italic", arial;
