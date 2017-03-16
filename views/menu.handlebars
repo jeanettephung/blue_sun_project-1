@@ -126,15 +126,21 @@
 							<div class="menu-item col-xs-6">
 								<div class="item-name col-xs-12">
 									{{first.name}}
+									{{#if first.spicy}}
+										<img class="spicy" src="/img/spicy.png">
+									{{/if}}
 								</div>
 								<div class="item-description col-xs-12">
-									{{first.description}}
+									{{first.description}} 
 								</div>
 							</div>
 
 							<div class="menu-item col-xs-6">
 								<div class="item-name col-xs-12">
 									{{second.name}}
+									{{#if second.spicy}}
+										<img class="spicy" src="/img/spicy.png">
+									{{/if}}
 								</div>
 								<div class="item-description col-xs-12">
 									{{second.description}}

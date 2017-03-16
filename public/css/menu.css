@@ -23,6 +23,10 @@ a.close_menu {
 	color: #fff;
 }
 
+.spicy {
+	width: 20px;
+}
+
 /* DESKTOP */
 #menu_desktop .menu-col .item-name, #menu_desktop .menu-col .item-price {
 	background-color: transparent!important;
