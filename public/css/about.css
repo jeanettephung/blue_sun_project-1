@@ -10,50 +10,28 @@
 	}
 }
 
+@media (min-width: 845px) {
+  #chefimg {
+		padding-top: 10px !important;
+	}
+}
+
 #about_content p {
     font-size: 17px;;
 }
 
 #about_image {
 	padding: 0;
-	height: 60vh;
   overflow: hidden;
 	position: relative;
 }
 
 #about_image img {
-	height: auto;
-	width: 100%;
-	position: relative;
+	padding: 0px;
 }
 
-@media screen and (min-width: 500px) {
-	#about_image img {
-		top: -60px;
-		width: 60%;
-		margin: 0 auto;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	#about_image img {
-		top: 0px;
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 1000px) {
-	#about_image img {
-		top: -100px;
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 1080px) {
-	#about_image img {
-		top: -150px !important;
-		width: 100% !important;
-	}
+.victor {
+	object-fit: cover;
 }
 
 #about_content {
