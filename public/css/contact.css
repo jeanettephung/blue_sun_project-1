@@ -24,6 +24,19 @@
 	margin-top: 10px;
 }
 
+.background {
+	background-color: rgba(255, 255, 255, 0.57);
+	box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.57);
+}
+
+.panel-body {
+	margin-top: 20px;
+}
+
+#contact_content > div:nth-child(2) > div {
+	margin-top: 35px;
+}
+
 .btn-gray {
 	margin: 10px 0;
 }
