@@ -227,6 +227,9 @@ a.close_menu {
 	margin-top: 20px;
 	padding: none;
 }
+.menu-price {
+	padding: none;
+}
 @media screen and (max-width: 480px) {
 	.menu-item {
 		margin-top: 25px;
@@ -246,6 +249,10 @@ a.close_menu {
 	background: transparent;
 	letter-spacing: .5px;
 	font-weight: normal;
+}
+
+.item-price {
+	padding-left: 15px;
 }
 
 @media screen and (max-width: 480px) {

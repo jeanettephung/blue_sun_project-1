@@ -123,32 +123,38 @@
 			<div class="col-xs-12 menu-scroll">
 					{{#each row}}
 						<div class="row">
+							<div class="menu-item col-xs-6">
+								<div class="item-name col-xs-12">
+									{{first.name}}
+								</div>
+								<div class="item-description col-xs-12">
+									{{first.description}}
+								</div>
+							</div>
 
-						<div class="menu-item col-xs-6">
-							<div class="item-name col-xs-12">
-								{{first.name}}
-							</div>
-							<div class="item-description col-xs-12">
-								{{first.description}}
-							</div>
-							<div class="item-price col-xs-12">
-								{{first.price}}
+							<div class="menu-item col-xs-6">
+								<div class="item-name col-xs-12">
+									{{second.name}}
+								</div>
+								<div class="item-description col-xs-12">
+									{{second.description}}
+								</div>
 							</div>
 						</div>
-					
-						<div class="menu-item col-xs-offset-1 col-xs-5">
-							<div class="item-name col-xs-12">
-								{{second.name}}
+				
+						<div class="row">
+							<div class="menu-price col-xs-6">
+								<div class="item-price col-xs-12">
+									{{first.price}}
+								</div>
 							</div>
-							<div class="item-description col-xs-12">
-								{{second.description}}
-							</div>
-							<div class="item-price col-xs-12">
-								{{second.price}}
+							<div class="menu-price col-xs-6">
+								<div class="item-price col-xs-12">
+									{{second.price}}
+								</div>
 							</div>
 						</div>
-					</div>
-				{{/each}}
+					{{/each}}
 
 			</div>
 		</div>
