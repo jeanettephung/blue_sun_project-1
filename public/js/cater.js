@@ -32,7 +32,7 @@ $(document).ready(function() {
             alert("Message must be filled out");
         } else {
             //send something
-            $.get("http://localhost:3000/send",{name: name, email: email, phone: phone, date: date, message:message },function(){
+            $.get("http://localhost:3000/send",{name: name, email: email, phone: phone, date: date, message: message },function(){
 
                 alert("Message has been successfully sent")
 

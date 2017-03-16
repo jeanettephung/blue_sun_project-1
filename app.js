@@ -19,6 +19,14 @@ var contact = require('./routes/contact');
 // var user = require('./routes/user');
 
 var app = express();
+var smtpTransport = nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    auth: {
+        user: "redmoonnoodlehouse@gmail.com",
+        pass: "redmoonnoodle"
+    }
+});
 
 
 //yelp api call
@@ -78,9 +86,28 @@ app.get('/menu', menu.view);
 app.get('/cater', function (req, res) {
     res.render('cater');
 });
+app.get('/send',function(req,res){
+
+    var mailOptions={
+        to : "redmoonnoodlehouse@gmail.com",
+        subject : "From User "+req.query.name+" On date: "+req.query.date,
+        text : req.query.message+ "email is: "+req.query.email+" phone is: "+req.query.phone
+    };
+    console.log(mailOptions);
+    smtpTransport.sendMail(mailOptions, function(error, response){
+        if(error){
+            console.log(error);
+            res.end("error");
+        }else{
+            console.log("Message sent: " + response.message);
+            res.end("sent");
+        }
+    });
+});
 app.get('/contact', function(req,res) {
     res.render('contact_us');
 });
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
