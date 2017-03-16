@@ -9,11 +9,11 @@ $(document).ready(function() {
 
 
 
-        name    = $('#name').val();
-        email   = $('#email').val();
-        phone   = $('#phone').val();
-        date    = $('#date').val();
-        message = $('#message').val();
+        var name    = $('#name').val();
+        var email   = $('#email').val();
+        var phone   = $('#phone').val();
+        var date    = $('#date').val();
+        var message = $('#message').val();
         console.log(name);
 
         if ( name == ""){
@@ -30,10 +30,20 @@ $(document).ready(function() {
 
         } else if (message ==""){
             alert("Message must be filled out");
+        } else {
+            //send something
+            $.get("http://localhost:3000/send",{name: name, email: email, phone: phone, date: date, message:message },function(){
+
+                alert("Message has been successfully sent")
+
+            });
+
         }
 
 
+
         event.preventDefault();
+
 
     });
 
