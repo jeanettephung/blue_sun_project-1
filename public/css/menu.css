@@ -111,6 +111,7 @@ a.close_menu {
   padding: 0px 10px 30px 25px;
 	z-index: 5;
 	overflow: auto;
+	overflow-x: hidden;
 	max-height: 435px;
 	background-color: rgba(255, 255, 255, 0.57);
 	box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.57);
