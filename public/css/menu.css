@@ -11,7 +11,7 @@
 }
 
 a.close_menu {
-	color: #830a10;
+	color: #fff;
 	margin-bottom: 30px;
 }
 
@@ -56,24 +56,29 @@ a.close_menu {
 	z-index: 60;
 }
 #category_col .category_menu {
-	padding: 0;
+	padding: 3px;
 }
 .category_menu .desktop-header-img .menu-header {
-	font-size: 2.0vw;
+	font-size: 1.4vw;
+	position: absolute;
+	bottom: 0px;
+  left: 0px;
+	margin: 0 auto;
+	background-color: rgba(68, 1, 1, 0.73);
+/*
 	padding: 0;
 	margin-top: 20%;
+*/
 }
 .desktop-header-img:hover {
 	background-size: 200%;
 }
 .active .menu-header {
-	color: #d4ac74;
+/*	color: #d4ac74;*/
 }
 .inactive_btn {
-/*
-	-webkit-filter: grayscale(90%);  
-	filter: grayscale(90%);
-*/
+	-webkit-filter: grayscale(45%);  
+	filter: grayscale(45%);
 }
 .menu-cat {
 	top: 70px;
@@ -105,7 +110,7 @@ a.close_menu {
 	z-index: -1;
 }
 .cat-header {
-	color: #830a10;
+	color: #fff;
 	position: fixed;
 	z-index: 10;
 	white-space: nowrap;
@@ -125,6 +130,8 @@ a.close_menu {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;	
+	position: relative;
+  text-align: center;
 }
 .desktop-header-1 {
 	background-image: url("/img/starters_chicken_wings.png");

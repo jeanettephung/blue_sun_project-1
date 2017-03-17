@@ -20,6 +20,9 @@
 								<div class="row">
 									<div class="item-name col-xs-10">
 										{{name}}
+										{{#if spicy}}
+											<img class="spicy" src="/img/spicy.png">
+										{{/if}}
 										<div class="item-description col-xs-12">
 											{{description}}
 										</div>
@@ -39,6 +42,9 @@
 								<div class="row">
 									<div class="item-name col-xs-10">
 										{{name}}
+										{{#if spicy}}
+											<img class="spicy" src="/img/spicy.png">
+										{{/if}}
 										<div class="item-description col-xs-12">
 											{{description}}
 										</div>
@@ -114,7 +120,7 @@
 	</div>
 	
 	{{#each desktop}}
-	{{#if category}}
+	
 		<div id="{{desktop_id}}" class="col-xs-offset-6 col-xs-6 menu-cat">
 			<div class="col-xs-5 affix cat-header">
 				<div class="cat-header-img"></div>
@@ -124,9 +130,10 @@
 					{{#each row}}
 						<div class="row">
 							<div class="menu-item col-xs-6">
+
 								<div class="item-name col-xs-12">
 									{{first.name}}
-									{{#if first.spicy}}
+									{{#if this.first.spicy}}
 										<img class="spicy" src="/img/spicy.png">
 									{{/if}}
 								</div>
@@ -138,7 +145,7 @@
 							<div class="menu-item col-xs-6">
 								<div class="item-name col-xs-12">
 									{{second.name}}
-									{{#if second.spicy}}
+									{{#if this.second.spicy}}
 										<img class="spicy" src="/img/spicy.png">
 									{{/if}}
 								</div>
@@ -164,6 +171,6 @@
 
 			</div>
 		</div>
-	{{/if}}
+	
 	{{/each}}
 </div>
