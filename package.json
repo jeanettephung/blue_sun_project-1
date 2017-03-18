@@ -22,6 +22,6 @@
     "yelp-fusion": "^1.0.3"
   },
   "engines": {
-    "node": "0.11.x"
+    "node": "4.4.x"
   }
 }
