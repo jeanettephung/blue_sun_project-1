@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(window).on("load", function() {
+
+
 	
 	//set height of border
 	function borderHeight() {
