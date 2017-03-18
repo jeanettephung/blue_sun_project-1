@@ -167,7 +167,7 @@ a.close_menu {
 }
 @media screen and (max-width: 480px) {
 	.menu-header {
-		font-size: 30px !important;
+		font-size: 35px !important;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -199,7 +199,7 @@ a.close_menu {
 	cursor: pointer;
 }
 .menu-header {
-	font-family: "aleo-regular", arial;
+	font-family: "Maiandra", arial;
 	font-size: 70px;
 	align-self: center;
 	text-align: center;

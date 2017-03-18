@@ -3,8 +3,13 @@
   src: url('/fonts/mvboli.ttf')  format('truetype')
 }
 
+@font-face {
+  font-family: 'Maiandra';
+  src: url('/fonts/Maiandra-GD-Regular.ttf')  format('truetype')
+}
+
 html, body {
-	font-family: 'Mv Boli';
+	font-family: 'Maiandra';
 }
 
 .btn-redMoon { 
