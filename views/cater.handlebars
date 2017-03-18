@@ -9,33 +9,109 @@
 			</div>
 
 			<div id="cater_content" class="col-xs-12 col-md-7">
-				<center><h1>Catering Inquiry</h1></center>
+				<center>
+					<h1>Catering Inquiry</h1>
+					<h4>or contact us at (858) 576-7466</h4>
+					<h5>Let us help you by offering services at a flexible price that fit your budget!</h5>
+				</center>
 
 				<form  role="form" data-toggle="validator">
 					<label>Name*</label>
 					<input class="form-control input-sm" id="name" type="text" required>
 
-					<label>Email</label> 
+					<label>Email*</label> 
 					<input class="form-control input-sm" id="email" type="email">
 
-					<label>Phone</label> 
+					<label>Phone*</label> 
 					<input class="form-control input-sm" id="phone" type="text">
 
-					<label>Date of Event</label>
+					<label>Date of Event*</label>
 					<input class="form-control input-sm" id="date" type="date">
 
-					<label>Message:</label> 
+					<label>Message*</label> 
 					<textarea class="form-control input-sm" id="message" name="message" rows="5"></textarea>
                     <button id="cater_submit" class="btn btn-redMoon btn-md center-block">Send</button>
 
-
 				</form>
-
-
 			</div>
 		</div>
 	</div>
 </div>
 
-<script>
-</script>
+
+<div class="modal fade" id="name_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Name must be filled out.</h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="email_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>You have entered an invalid email address.</h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="phone_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Phone must be filled out and must only be numbers. (ex. xxxxxxxxxxx) </h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="phone2_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Invalid phone number (include area number - ex. xxxxxxxxxxx) </h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="date_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Date must be filled out.</h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="message_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Message must be filled out.</h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="success_modal" role="dialog">
+	<div class="cater-modal modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h4>Message has been successfuly sent!</h4>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

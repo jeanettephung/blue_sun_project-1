@@ -3,6 +3,11 @@
 	color: #d4ac74;
 }
 
+.cater-modal {
+	text-align: center;
+	top: 30%;
+}
+
 #cater_image {
 	padding: 0;
 }

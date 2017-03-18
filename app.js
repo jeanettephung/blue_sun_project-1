@@ -90,8 +90,8 @@ app.get('/send',function(req,res){
 
     var mailOptions={
         to : "redmoonnoodlehouse@gmail.com",
-        subject : "From User "+req.query.name+" On date: "+req.query.date,
-        text : req.query.message+ "email is: "+req.query.email+" phone is: "+req.query.phone
+        subject : "CATERING for  "+req.query.name+" on date: "+req.query.date,
+        text : req.query.message
     };
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function(error, response){

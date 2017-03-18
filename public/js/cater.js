@@ -1,13 +1,10 @@
 /**
  * Created by arnoldchen on 3/9/17.
  */
-//$('#cater-form').on('submit', function() { console.log("what"); });
 
 $(document).ready(function() {
+	
     $( '#cater_submit' ).click( function(event) {
-
-
-
 
         var name    = $('#name').val();
         var email   = $('#email').val();
@@ -16,24 +13,33 @@ $(document).ready(function() {
         var message = $('#message').val();
 
         if ( name == ""){
-            alert("Name must be filled out");
+							$('#name_modal').modal('show'); 
 
         } else if  (  !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ) ) {
-            alert("You have entered an invalid email address!")
-
+            $('#email_modal').modal('show'); 
+					
         } else if (isNaN(phone)){
-            alert("Phone must be filled out and must only be numbers");
+            $('#phone_modal').modal('show');
+
+        } else if (phone.toString().length < 10 ){
+            $('#phone2_modal').modal('show');
 
         } else if (date==""){
-            alert("date must be filled out");
+            $('#date_modal').modal('show');
 
         } else if (message ==""){
-            alert("Message must be filled out");
+            $('#message_modal').modal('show');
+					
         } else {
             //send something
-            $.get("http://localhost:3000/send",{name: name, email: email, phone: phone, date: date, message: message },function(){
+            $.get("http://localhost:3000/send",{
+							'name': name,
+							'date': date,
+							'message': "Name: " + name + '\n' +  "Email: " + email + '\n' + "Date: " + date + ' (year-month-date)\n' + "Phone: " + phone + '\n' + "Message: " + message + '\n'
+							
+						},function(){
 
-                alert("Message has been successfully sent")
+						$('#success_modal').modal('show');
 
             });
 
