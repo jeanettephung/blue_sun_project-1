@@ -35,7 +35,6 @@ $(document).ready(function(){
 		event.preventDefault();
 		var menu = $(this).parentsUntil("menu-header-img");
 		target = "#"+menu[1]['id'];
-		console.log(target);
     $(target).collapse("hide");
 	});
 	
