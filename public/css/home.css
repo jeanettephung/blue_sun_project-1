@@ -92,6 +92,10 @@ body {
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.slide {
+	width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   #featuredCarousel .item h3 {
 		font-size: 17px;
