@@ -22,8 +22,6 @@ $(document).ready(function(){
 
     for (i=0; i< items.length; i++){
         var current_nav = $(items[i]).find('a').attr("href");
-        //console.log(current_nav);
-        //console.log(window.location.pathname);
         if ( current_nav == window.location.pathname) {
             $(items[i]).addClass("active_page");
         }

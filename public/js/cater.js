@@ -14,7 +14,6 @@ $(document).ready(function() {
         var phone   = $('#phone').val();
         var date    = $('#date').val();
         var message = $('#message').val();
-        console.log(name);
 
         if ( name == ""){
             alert("Name must be filled out");
