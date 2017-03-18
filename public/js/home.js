@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on("load", function() {
 
 
 	$("#img1").attr('src', "https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/schezuan_chicken_zps4y4hjhr4.png");
