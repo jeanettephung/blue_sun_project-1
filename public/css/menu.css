@@ -141,6 +141,8 @@ a.close_menu {
 }
 .desktop-header-3 {
 	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/mapo_tofu_zpshorcyrhg.png");
+	-webkit-filter: brightness(1.11);
+  filter: brightness(1.11);
 }
 .desktop-header-4 {
 	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/specialty_honey_walnut_shrimp_zpsemua6874.png");
@@ -150,6 +152,8 @@ a.close_menu {
 }
 .desktop-header-6 {
 	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/drinks_zps0qntzeix.png");
+	-webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 /* MOBILE */
@@ -174,6 +178,10 @@ a.close_menu {
 	.menu-col {
 		margin-bottom: 0px !important;
 	}
+}
+
+#menu_mobile .menu-header-img {
+	background-position: 0px 40%;
 }
 
 .menu_header {
