@@ -122,3 +122,6 @@ fieldset[disabled] .btn-gray.active {
   background-color: #FFFFFF; 
 }
 
+#front-image{
+    margin: auto;
+}
