@@ -32,7 +32,7 @@ $(document).ready(function() {
 					
         } else {
             //send something
-            $.get("http://localhost:3000/send",{
+            $.get("/send",{
 							'name': name,
 							'date': date,
 							'message': "Name: " + name + '\n' +  "Email: " + email + '\n' + "Date: " + date + ' (year-month-date)\n' + "Phone: " + phone + '\n' + "Message: " + message + '\n'
