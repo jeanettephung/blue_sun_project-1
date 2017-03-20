@@ -19,7 +19,7 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
-	.slide img {
+	#featuredCarousel .slide img {
 		position: relative;
 		transform: translateY(-23%);
 	}
