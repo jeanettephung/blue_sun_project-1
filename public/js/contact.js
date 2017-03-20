@@ -13,7 +13,8 @@ $(document).ready(function() {
 });
 
 window.onresize = function() {
-    if (screen.width>992) {
+    if ($(window).width()>992) {
+        console.log("cool");
         var h = $("#contact_map").height();
         console.log(h);
         $("#front-image").css("height", h - 205);
