@@ -81,7 +81,7 @@ a.close_menu {
 	filter: grayscale(45%);
 }
 .menu-cat {
-	top: 70px;
+	top: 10px;
 }
 .inactive_cat {
 	display: none;
@@ -111,7 +111,6 @@ a.close_menu {
 }
 .cat-header {
 	color: #fff;
-	position: fixed;
 	z-index: 10;
 	white-space: nowrap;
 }
