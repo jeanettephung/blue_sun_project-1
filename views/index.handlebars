@@ -99,57 +99,6 @@
 		<h4> Automobile Club of Southern California - 2016</h4>
 	</div>
 	
-<!-- Carousel for Awards -->	
-<!--
-	<div id="awards col-xs-12">
-		<div id="awardsCarousel" class="carousel slide" data-ride="carousel">
-
-			<ol class="carousel-indicators">
-				<li data-target="#awardsCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#awardsCarousel" data-slide-to="1"></li>
-				<li data-target="#awardsCarousel" data-slide-to="2"></li>
-				<li data-target="#awardsCarousel" data-slide-to="3"></li>
-			</ol>
-
-			<div class="carousel-inner" role="listbox">
-
-				<div class="item active">
-					<img src="http://www.pourcel-chefs-blog.com/blog1/wp-content/uploads/2014/10/Capture-d%E2%80%99%C3%A9cran-2014-10-18-%C3%A0-19.16.36.jpg" alt="Chania" width="100%" height="100%">
-					<div class="carousel-caption">
-						<h3>Chania</h3>
-						<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_4989_50-best-restaurants-infographic-2013.jpg" alt="Chania" width="100%" height="100%">
-					<div class="carousel-caption">
-						<h3>Chania</h3>
-						<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				
-				<div class="item">
-					<img src="http://1.bp.blogspot.com/-dWzRcZT4OuU/UkwiNPY5p-I/AAAAAAAAG2I/owERET70KDI/s640/OxfordshireRestaurantAwards1.png" alt="Chania" width="100%" height="100%">
-					<div class="carousel-caption">
-						<h3>Chania</h3>
-						<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-			</div>
-
-			<a class="left carousel-control" href="#awardsCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#awardsCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</div>
--->
-	
 	<!-- Caraousel for Yelp Reviews -->
 	<div id="yelp_reviews col-xs-12">
 		<div id="yelpCarousel" class="carousel slide" data-ride="carousel">
@@ -157,140 +106,26 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 
-				<div class="item active">        
-					<div class="col-md-4 col-sm-6">
-        		<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media3.fl.yelpcdn.com/photo/CvIBsnCMtidC2bK-SFTIUg/ls.jpg">
-        			<p>Came here last night and I do not regret it one bit! The food was good, and the service was amazing.</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=oIRKqNQjfMU0-nVSQUZWwg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Judy Ann A.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
+				{{#each review.row}}
+					<div class="item {{#if active}} active {{/if}} ">   
+						{{#each item}}
+							<div class="col-md-4 col-sm-6 {{#if hidden}} hidden-xs {{/if}}">
+								<div class="block-text rel zmin">
+									<img class="review_img img-rounded" src="{{image}}">
+									<p>{{review}}</p>
+									<p class="reviewer"><a href="{{link}}">-{{name}}</a></p>
+									<div class="star">
+										<i class="fa fa-star fa-3" aria-hidden="true"></i>
+										<i class="fa fa-star fa-3" aria-hidden="true"></i>
+										<i class="fa fa-star fa-3" aria-hidden="true"></i>
+										<i class="fa fa-star fa-3" aria-hidden="true"></i>
+										<i class="fa fa-star fa-3" aria-hidden="true"></i>
+									</div>
+								</div>
 							</div>
-				    </div>
-					</div>
-          <div class="col-md-4 col-sm-6 hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/7e4e0dfd903f/assets/img/default_avatars/user_large_square.png">
-        			<p>The service here is amazing as well as the food! I have been here quite a few times and enjoyed every dish so far</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=_NP9UdckM-FhpBdEXG-HPQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Philip G.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-					<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media1.fl.yelpcdn.com/photo/r0hK7VAH_1xWaXJDA7a9Wg/ls.jpg">
-        			<p>Love the food here!! It is incredibly flavorful and come piping hot from the kitchen.</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=590P7_1fKm6YPhbo6ayaSg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Ignacio M.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-       		</div>
-			</div>
-				
-			<div class="item">
-        	<div class="col-md-4 col-sm-6">
-        		<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media2.fl.yelpcdn.com/photo/QZVm3dVpT9OYH8rYwX4N-A/ls.jpg">
-        			<p>They have impeccable service and wonderful food! Don't forget to try their Milk Tea, it's the BEST!! Planning on eating here for many more years</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=BBKlNBYcFXlcFBSeZFICDg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Krystal D.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-          <div class="col-md-4 col-sm-6 hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media4.fl.yelpcdn.com/photo/NM_NexucuvMaiMX8_yTH_Q/ls.jpg">
-        			<p>Everything was delicious, the service was friendly and the restraunt was clean. We are looking forward to going again some time soon.</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=N4TQn3TJYG8tmxPAkJ-yYw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Kelly S.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-					<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media2.fl.yelpcdn.com/photo/ep3QdW3rWc2dX5tdN_6X8A/ls.jpg">
-        			<p>What a pleasant find this was! I recommend the dumplings for sure- very tasty! The Red Moon beef was so satisfying with steamed rice! I'm definitely coming back!</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=6sagHXYOBml9SFEatrW69Q&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Bernadette N.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-       </div>
-				
-			<div class="item">
-        	<div class="col-md-4 col-sm-6">
-        		<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media3.fl.yelpcdn.com/photo/O5l2gDjFSM_HpYUrHqMagQ/ls.jpg">
-        			<p>Mae is a fantastic hostess; her husband runs the kitchen to perfection, he serves some really fantastic dishes. The motto, hot and fast, and YUMMMMM!</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=O4OYBl66zVqLXZ4v8yFKYQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Clark H.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-          <div class="col-md-4 col-sm-6 hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media1.fl.yelpcdn.com/photo/g5Oe7ytwwdb8JRj0ebZh-A/ls.jpg">
-        			<p>Favorite restaurant in San Diego! Not only is their food amazing but the service is really top notch. The owners are so sweet and always so accommodating.</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=rmW6nFQK1dV-s7vEvMqCOw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Johanna L.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-					<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-						<div class="block-text rel zmin">
-							<img class="review_img img-rounded" src="https://s3-media1.fl.yelpcdn.com/photo/a0KhDDFJLZzhlYFaDKhENw/ls.jpg">
-        			<p>Wow! My husband and I tried this place on a whim and I couldn't be more impressed. The food is SO FRESH, and delicious. This place has some of the best food in San Diego and you won't be disappointed.</p>
-							<p class="reviewer"><a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego?hrid=93VbhrSbueJAzARrwYrZtA&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">-Sarah M.</a></p>
-					    <div class="star">
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-								<i class="fa fa-star fa-3" aria-hidden="true"></i>
-							</div>
-				    </div>
-					</div>
-       </div>
+						{{/each}}
+				</div>
+		  {{/each}}
 
 			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#yelpCarousel" role="button" data-slide="prev">
@@ -307,7 +142,6 @@
 </div>
 <!-- End of carousel -->
 
-<a class="button" href=
-        "https://www.google.com/maps/dir/Current+Location/4646+Convoy+St+#114+San Diego+CA+92111"
+<a class="button" href= "https://www.google.com/maps/dir/Current+Location/4646+Convoy+St+#114+San Diego+CA+92111"
    target="_blank">
 </a>

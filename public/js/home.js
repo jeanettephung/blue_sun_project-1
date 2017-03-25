@@ -1,6 +1,4 @@
 $(window).on("load", function() {
-
-
 	
 	//set height of border
 	function borderHeight() {
@@ -14,6 +12,7 @@ $(window).on("load", function() {
 		}
 	}
 	
+	// set height of featured carousel
 	function headerHeight() {
 		var headerHeight = $("#featuredCarousel").height();
 		var itemHeight = $("#featuredCarousel .item.active img").height();
@@ -28,14 +27,16 @@ $(window).on("load", function() {
 		}
 	}
 	
-	// set height of border on page load and resize
-	borderHeight();
-	$( window ).resize(function() {
-		borderHeight();
-	});
+	// call function on window resize 
+	function winResize(func) {
+		func();
+		$(window).resize(function() {
+			func();
+		});
+	}
 	
-	headerHeight();
-	$( window ).resize(function() {
-		headerHeight();
-	});
+	// set height of border on page load and resize
+	winResize(borderHeight);
+	winResize(headerHeight);
+
 });
