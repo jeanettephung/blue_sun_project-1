@@ -1,3 +1,5 @@
+var modal = require("../data/modal.json");
+
 var nodemailer = require("nodemailer");
 
 var smtpTransport = nodemailer.createTransport({
@@ -10,8 +12,7 @@ var smtpTransport = nodemailer.createTransport({
 });
 
 exports.view = function(req, res){
-    res.render('cater', {
-    });
+    res.render('cater', modal);
 };
 
 exports.send = function(req, res){

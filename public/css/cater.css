@@ -22,12 +22,16 @@
 	padding: 0 40px;
 }
 
-#cater_submit {
+#cater_submit, #cater_load {
 	margin: 10px auto;	
 }
 
 #cater-body {
-    padding: 0px;
+   padding: 0px;
+}
+
+#cater_load {
+	display: none;
 }
 
 label {

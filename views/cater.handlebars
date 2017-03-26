@@ -30,88 +30,28 @@
 
 					<label>Message*</label> 
 					<textarea class="form-control input-sm" id="message" name="message" rows="5"></textarea>
-                    <button id="cater_submit" class="btn btn-redMoon btn-md center-block">Send</button>
-
+          
+					<button id="cater_submit" class="btn btn-redMoon btn-md center-block">Send</button>
+					
+					<button id="cater_load" class="btn btn-redMoon btn-md center-block "><i class="fa fa-spinner fa-spin"></i> Loading</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
 
-
-<div class="modal fade" id="name_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Name must be filled out.</h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+{{#each this}}
+	{{#if id}}
+		<div class="modal fade" id="{{id}}" role="dialog">
+			<div class="cater-modal modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						<h4>{{message}}</h4>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	{{/if}}
+{{/each}}
 
-<div class="modal fade" id="email_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>You have entered an invalid email address.</h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="phone_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Phone must be filled out and must only be numbers. (ex. xxxxxxxxxxx) </h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="phone2_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Invalid phone number (include area number - ex. xxxxxxxxxxx) </h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="date_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Date must be filled out.</h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="message_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Message must be filled out.</h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="success_modal" role="dialog">
-	<div class="cater-modal modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
-				<h4>Message has been successfuly sent!</h4>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
