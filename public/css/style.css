@@ -67,8 +67,24 @@ html, body {
 
 .btn-gray { 
   color: #FFFFFF; 
-  background-color: #3B3B3B;
+  background-color: #3B3B3B; 
   border-color: #3B3B3B; 
+} 
+ 
+.btn-gray:hover, 
+.btn-gray:focus, 
+.btn-gray:active, 
+.btn-gray.active, 
+.open .dropdown-toggle.btn-gray { 
+  color: #FFFFFF; 
+  background-color: #544F4F; 
+  border-color: #3B3B3B; 
+} 
+ 
+.btn-gray:active, 
+.btn-gray.active, 
+.open .dropdown-toggle.btn-gray { 
+  background-image: none; 
 } 
 
 /* Background */

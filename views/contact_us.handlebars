@@ -1,85 +1,50 @@
 <link rel="stylesheet" href="/css/contact.css">
 <script src="js/contact.js"></script>
-
-<html>
-
-<head>
-    <style>
-        #map {
-            height: 525px;
-            width: 100%;
-        }
-        @media (max-width: 480px){
-            #map{
-                height: 200px;
-            }
-            #front-image{
-                height: 100%;
-                width : 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-<div id="contact">
-		
-    <div class="container-fluid" id="gmap">
-				
-				<div id="contact_header" class="col-xs-12">
-					<center><h3>Come Visit Us!</h3></center>
-				</div>
-				
-        <div id="contact_map" class="col-xs-12 col-md-6">
-            <div id="map"></div>
-            <a href="https://maps.google.com?saddr=Current+Location&daddr=4646+Convoy+St+#114+San+Diego+CA+92111" class="btn btn-gray btn-lg col-xs-12">
-                <span class="glyphicon glyphicon-map-marker"></span> Direct me there
-            </a>
-        </div>
-
-        <div id="contact_content" class="col-xs-12 col-md-6">
-
-            <div class=" background">
-                <div class="panel-body">
-                    <h7 class="col-lg-12 col-md-12 col-sm-12">Address: 4646 Convoy St. Ste. 114 San Diego, CA 92111</h7>
-                    <h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Phone number: <a href="tel:+1800229933">(858) 576-7466</a></h7>
-                    <h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Email: <a href="mailto:#">redmoonnoodlehouse@gmail.com</a></h7>
-                    <h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Our Social Media:
-
-                        <a href="https://www.facebook.com/redmoonnoodlehouse/">
-                            <i class="fa fa-facebook facebook-icon"></i>
-                        </a>
-                        <a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego">
-                            <i class="fa fa-yelp"></i>
-                        </a>
-
-                    </h7>
-
-                </div>
-            </div>
-            <div class="background">
-                <div class="panel-body center">
-                    <img src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/store_front_zpssupjmlb3.png" class="img-responsive" id="front-image" alt="Responsive image">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    function initMap() {
-        var uluru = {lat: 32.8250641, lng: -117.15585 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 19,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-</script>
-
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9ZAA7ZWGfDjJMPSMPkWU8e2TmBweS4_I&callback=initMap">
 </script>
 
+<div id="contact">
+	<div class="container-fluid" id="gmap">
+		<div id="contact_header" class="col-xs-12">
+			<center><h3>Come Visit Us!</h3></center>
+		</div>
+
+		<div id="contact_map" class="col-xs-12 col-md-6">
+			<div id="map"></div>
+			<a href="https://maps.google.com?saddr=Current+Location&daddr=4646+Convoy+St+#114+San+Diego+CA+92111" class="btn btn-gray btn-lg col-xs-12">
+				<span class="glyphicon glyphicon-map-marker"></span> Direct me there
+			</a>
+		</div>
+
+		<div id="contact_content" class="col-xs-12 col-md-6">
+
+			<div class=" background">
+				<div class="panel-body">
+					<h7 class="col-lg-12 col-md-12 col-sm-12">
+						Address: 4646 Convoy St. Ste. 114 San Diego, CA 92111
+					</h7>
+					<h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						Phone number: <a href="tel:+1800229933">(858) 576-7466</a>
+					</h7>
+					<h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						Email: <a href="mailto:#">redmoonnoodlehouse@gmail.com</a>
+					</h7>
+					<h7 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						Our Social Media:
+						<a href="https://www.facebook.com/redmoonnoodlehouse/">
+							<i class="fa fa-facebook facebook-icon"></i>
+						</a>
+						<a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego">
+							<i class="fa fa-yelp"></i>
+						</a>
+					</h7>
+				</div>
+			</div>
+			<div class="background">
+				<div class="panel-body center">
+					<img src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/store_front_zpssupjmlb3.png" class="img-responsive" id="front-image" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
