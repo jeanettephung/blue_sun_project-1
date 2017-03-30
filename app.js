@@ -7,11 +7,11 @@ var express    = require('express');
 var http       = require('http');
 var path       = require('path');
 var handlebars = require('express3-handlebars')
-
+ 
 // Routes
 var index   = require('./routes/index');
 var menu    = require('./routes/menu');
-var cater = require('./routes/cater');
+var cater 	= require('./routes/cater');
 
 var app = express();
 
