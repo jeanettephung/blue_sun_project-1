@@ -126,39 +126,11 @@
 #contact .panel-body {
   margin-top: 20px;
 }
-#footer > div > div:nth-child(1) > div > center {
-  margin-top: 10px;
+* {
+  margin: 0;
 }
 .address_margin {
   margin-left: 55px;
-}
-@media screen and (max-width: 480px) {
-  .address_mobile {
-    display: inherit;
-  }
-}
-@media screen and (max-width: 480px) {
-  .address_desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) {
-  .address_desktop {
-    display: inherit;
-  }
-}
-@media screen and (min-width: 480px) {
-  .address_mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  #footer .container {
-    padding: 0;
-  }
-}
-* {
-  margin: 0;
 }
 html {
   height: 88%;
@@ -168,48 +140,26 @@ body {
   padding-bottom: 130px;
   min-height: 100%;
 }
-@media screen and (max-width: 480px) {
-  body {
-    position: relative;
-    padding-bottom: 36%;
-    min-height: 100%;
-  }
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+  box-shadow: 0 1px 0 #B4B3B3;
 }
 #footer {
   height: 115px;
-}
-#footer {
   z-index: 999;
-}
-/* ORIGINAL CSS */
-.full {
-  width: 100%;
-}
-.gap {
-  height: 30px;
-  width: 100%;
-  clear: both;
-  display: block;
 }
 .footer {
   color: white;
   background: #830a10;
-  height: auto;
-  padding-bottom: 30px;
-  position: relative;
-  width: 100%;
   border-bottom: 1px solid #58080c;
   border-top: 1px solid #750c11;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  padding-bottom: 30px;
   position: absolute;
   right: 0;
-  bottom: 0;
-  left: 0;
-}
-.footer p {
-  margin: 0;
-}
-.footer img {
-  max-width: 100%;
+  width: 100%;
 }
 .footer h3 {
   border-bottom: 1px solid #BAC1C8;
@@ -220,37 +170,71 @@ body {
   padding: 40px 0 10px;
   text-transform: uppercase;
 }
+.footer a {
+  color: white;
+}
+.footer p {
+  margin: 0;
+}
+.footer img {
+  max-width: 100%;
+}
 .footer ul {
   font-size: 13px;
   list-style-type: none;
   margin-left: 8px;
   padding-left: 0;
   margin-top: 15px;
-  /*	color: #7F8C8D;*/
 }
 .footer ul li a {
   padding: 0 0 5px 0;
   display: block;
 }
-.footer a {
-  color: white;
+#footer > div > div:nth-child(1) > div > center {
+  margin-top: 10px;
 }
-.supportLi h4 {
-  font-size: 20px;
-  font-weight: lighter;
-  line-height: normal;
-  margin-bottom: 0 !important;
-  padding-bottom: 0;
+.footer-bottom {
+  background: #E3E3E3;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.newsletter-box input#appendedInputButton {
-  background: #FFFFFF;
-  display: inline-block;
-  float: left;
-  height: 30px;
-  clear: both;
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+.full {
   width: 100%;
 }
+.gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+#home #return-to-top {
+  color: rgba(255, 255, 255, 0.86);
+  float: right;
+  margin-right: 20px;
+}
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover {
+  transform: translateY(-8px);
+}
+.newsletter-box {
+  overflow: hidden;
+}
 .newsletter-box .btn {
+  color: #fff;
   border: medium none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -261,14 +245,25 @@ body {
   height: 40px;
   padding: 0;
   width: 100%;
-  color: #fff;
 }
-.newsletter-box {
-  overflow: hidden;
+.newsletter-box input#appendedInputButton {
+  background: #FFFFFF;
+  clear: both;
+  display: inline-block;
+  float: left;
+  height: 30px;
+  width: 100%;
 }
-.bg-gray {
-  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-  box-shadow: 0 1px 0 #B4B3B3;
+.payments {
+  font-size: 1.5em;
+}
+#return-to-top {
+  color: rgba(255, 255, 255, 0.86);
+  float: right;
+  margin-right: 20px;
+}
+#return-to-top:hover {
+  text-decoration: none;
 }
 .social li {
   background: none repeat scroll 0 0 #3b3b3b;
@@ -301,6 +296,11 @@ body {
 .social li a {
   color: #EDEFF1;
 }
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
 .social .facebook:hover {
   border: 2px solid #2c3e50;
   background-color: #3b5998;
@@ -310,49 +310,12 @@ body {
   border: 2px solid #be2020;
   background: #d32323;
 }
-.social li a i {
-  font-size: 16px;
-  margin: 0 0 0 5px;
-  color: #EDEFF1 !important;
-}
-.footer-bottom {
-  background: #E3E3E3;
-  border-top: 1px solid #DDDDDD;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.footer-bottom p.pull-left {
-  padding-top: 6px;
-}
-.payments {
-  font-size: 1.5em;
-}
-.hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-}
-.hvr-float:hover {
-  transform: translateY(-8px);
-}
-#home #return-to-top {
-  color: rgba(255, 255, 255, 0.86);
-  float: right;
-  margin-right: 20px;
-}
-#return-to-top {
-  color: rgba(255, 255, 255, 0.86);
-  float: right;
-  margin-right: 20px;
-}
-#return-to-top:hover {
-  text-decoration: none;
+.supportLi h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
 }
 #to-top {
   position: fixed;
@@ -360,6 +323,25 @@ body {
   right: 0px;
   width: 60px;
   z-index: 999;
+}
+@media screen and (max-width: 480px) {
+  .address_mobile {
+    display: inherit;
+  }
+  .address_desktop {
+    display: inherit;
+  }
+  .address_mobile {
+    display: none;
+  }
+  body {
+    min-height: 100%;
+    padding-bottom: 36%;
+    position: relative;
+  }
+  #footer .container {
+    padding: 0;
+  }
 }
 /* Contents:
 		Basic Style
