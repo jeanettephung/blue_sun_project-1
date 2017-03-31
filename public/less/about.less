@@ -1,0 +1,41 @@
+@import "variables.less";
+
+#about {
+	margin-top: 75px;
+	color: @orange;
+
+	#about_content {
+		padding: 10px 40px 50px 40px;
+		text-align: center;
+		
+		p {
+			font-size: 20px;;
+		}
+	}
+
+	#about_image {
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		
+		img {
+			padding: 0px;
+		}
+	}
+	
+	.victor {
+		object-fit: cover;
+	}
+
+	#chefimg {
+		padding: 0px;
+		
+		@media (max-width: 800px) {
+			overflow: scroll;
+		}
+		
+		@media (min-width: 845px) {
+			padding-top: 10px !important;
+		}
+	}
+}
