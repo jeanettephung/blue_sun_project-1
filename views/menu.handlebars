@@ -1,167 +1,169 @@
 <script type="text/javascript" src="/js/menu_desktop.js"></script>
 
 <!-- MENU MOBILE -->
-<div class="container" id="menu_mobile">
-	<div class="menu-section">
-		{{#each mobile}}
-		{{#if category}}
-			<div class="menu-header-img col-xs-12" id="{{header_id}}" data-toggle="collapse" data-target="#{{menu_id}}">
-				<div class="menu-header col-xs-12">
-					{{category}}
+<div id="menu">
+	<div class="container" id="menu_mobile">
+		<div class="menu-section">
+			{{#each mobile}}
+			{{#if category}}
+				<div class="menu-header-img col-xs-12" id="{{header_id}}" data-toggle="collapse" data-target="#{{menu_id}}">
+					<div class="menu-header col-xs-12">
+						{{category}}
+					</div>
 				</div>
-			</div>
-			<div class="menu-container">
-				<div id="{{menu_id}}" class="menu-category collapse">
-					<div class="menu-col menu-left col-sm-6 col-xs-12">
-						{{#each items}}
-						{{#if left}}
-							<div class="menu-item">
-								<div class="row">
-									<div class="item-name col-xs-10">
-										{{name}}
-										{{#if spicy}}
-											<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
-										{{/if}}
-										<div class="item-description col-xs-12">
-											{{description}}
+				<div class="menu-container">
+					<div id="{{menu_id}}" class="menu-category collapse">
+						<div class="menu-col menu-left col-sm-6 col-xs-12">
+							{{#each items}}
+							{{#if left}}
+								<div class="menu-item">
+									<div class="row">
+										<div class="item-name col-xs-10">
+											{{name}}
+											{{#if spicy}}
+												<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
+											{{/if}}
+											<div class="item-description col-xs-12">
+												{{description}}
+											</div>
+										</div>
+										<div class="item-price col-xs-2">
+											{{price}}
 										</div>
 									</div>
-									<div class="item-price col-xs-2">
-										{{price}}
-									</div>
 								</div>
-							</div>
-						{{/if}}
-						{{/each}}
-					</div>
-					<div class="menu-col menu-right col-sm-6 col-xs-12">
-						{{#each items}}
-						{{#unless left}}
-							<div class="menu-item">
-								<div class="row">
-									<div class="item-name col-xs-10">
-										{{name}}
-										{{#if spicy}}
-											<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
-										{{/if}}
-										<div class="item-description col-xs-12">
-											{{description}}
+							{{/if}}
+							{{/each}}
+						</div>
+						<div class="menu-col menu-right col-sm-6 col-xs-12">
+							{{#each items}}
+							{{#unless left}}
+								<div class="menu-item">
+									<div class="row">
+										<div class="item-name col-xs-10">
+											{{name}}
+											{{#if spicy}}
+												<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
+											{{/if}}
+											<div class="item-description col-xs-12">
+												{{description}}
+											</div>
+										</div>
+										<div class="item-price col-xs-2">
+											{{price}}
 										</div>
 									</div>
-									<div class="item-price col-xs-2">
-										{{price}}
-									</div>
 								</div>
-							</div>
-						{{/unless}}
-						{{/each}}
-					</div>
-					<center><a class="close_menu" href="#">Close</a></center>
-				</div>
-			</div>
-		{{/if}}
-		{{/each}}
-	</div>			
-</div>
-
-<!-- MENU DESKTOP -->
-<div id="menu_desktop" class="container">
-	<div id="category_col" class="col-sm-3 col-md-4 affix">
-		<div class="menu_header">Menu</div>
-		<div class="row">
-			<div id="menu_cat1" class="category_menu col-xs-6">
-				<div class="desktop-header-1 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Starters
+							{{/unless}}
+							{{/each}}
+						</div>
+						<center><a class="close_menu" href="#">Close</a></center>
 					</div>
 				</div>
-			</div>
-			<div id="menu_cat2" class="category_menu col-xs-6">
-				<div class="desktop-header-2 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Beef, Pork &amp Chicken
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="menu_cat3" class="category_menu col-xs-6">
-				<div class="desktop-header-3 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Vegetarian Entrees
-					</div>
-				</div>
-			</div>
-			<div id="menu_cat4" class="category_menu col-xs-6">
-				<div class="desktop-header-4 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Red Moon Specialties
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="menu_cat5" class="category_menu col-xs-6">
-				<div class="desktop-header-5 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Noodles and Rice
-					</div>
-				</div>
-			</div>
-			<div id="menu_cat6" class="category_menu col-xs-6">
-				<div class="desktop-header-6 desktop-header-img col-xs-12">
-					<div class="menu-header col-xs-12">
-						Drinks and Sides
-					</div>
-				</div>
-			</div>
-		</div>
+			{{/if}}
+			{{/each}}
+		</div>			
 	</div>
-	{{#each desktop}}
-		<div id="{{desktop_id}}" class="col-xs-offset-6 col-xs-6 menu-cat">
-			<div class="col-xs-12 cat-header">
-				<center><h1>{{category}}</h1></center>
+
+	<!-- MENU DESKTOP -->
+	<div id="menu_desktop" class="container">
+		<div id="category_col" class="col-sm-3 col-md-4 affix">
+			<div class="menu_header">Menu</div>
+			<div class="row">
+				<div id="menu_cat1" class="category_menu col-xs-6">
+					<div class="desktop-header-1 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Starters
+						</div>
+					</div>
+				</div>
+				<div id="menu_cat2" class="category_menu col-xs-6">
+					<div class="desktop-header-2 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Beef, Pork &amp Chicken
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-xs-12 menu-scroll">
-					{{#each row}}
-						<div class="row">
-							<div class="menu-item col-xs-6">
-								<div class="item-name col-xs-12">
-									{{first.name}}
-									{{#if this.first.spicy}}
-										<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
-									{{/if}}
-								</div>
-								<div class="item-description col-xs-12">
-									{{first.description}} 
-								</div>
-							</div>
-							<div class="menu-item col-xs-6">
-								<div class="item-name col-xs-12">
-									{{second.name}}
-									{{#if this.second.spicy}}
-										<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
-									{{/if}}
-								</div>
-								<div class="item-description col-xs-12">
-									{{second.description}}
-								</div>
-							</div>
+			<div class="row">
+				<div id="menu_cat3" class="category_menu col-xs-6">
+					<div class="desktop-header-3 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Vegetarian Entrees
 						</div>
-						<div class="row">
-							<div class="menu-price col-xs-6">
-								<div class="item-price col-xs-12">
-									{{first.price}}
-								</div>
-							</div>
-							<div class="menu-price col-xs-6">
-								<div class="item-price col-xs-12">
-									{{second.price}}
-								</div>
-							</div>
+					</div>
+				</div>
+				<div id="menu_cat4" class="category_menu col-xs-6">
+					<div class="desktop-header-4 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Red Moon Specialties
 						</div>
-					{{/each}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="menu_cat5" class="category_menu col-xs-6">
+					<div class="desktop-header-5 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Noodles and Rice
+						</div>
+					</div>
+				</div>
+				<div id="menu_cat6" class="category_menu col-xs-6">
+					<div class="desktop-header-6 desktop-header-img col-xs-12">
+						<div class="menu-header col-xs-12">
+							Drinks and Sides
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	{{/each}}
+		{{#each desktop}}
+			<div id="{{desktop_id}}" class="col-xs-offset-6 col-xs-6 menu-cat">
+				<div class="col-xs-12 cat-header">
+					<center><h1>{{category}}</h1></center>
+				</div>
+				<div class="col-xs-12 menu-scroll">
+						{{#each row}}
+							<div class="row">
+								<div class="menu-item col-xs-6">
+									<div class="item-name col-xs-12">
+										{{first.name}}
+										{{#if this.first.spicy}}
+											<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
+										{{/if}}
+									</div>
+									<div class="item-description col-xs-12">
+										{{first.description}} 
+									</div>
+								</div>
+								<div class="menu-item col-xs-6">
+									<div class="item-name col-xs-12">
+										{{second.name}}
+										{{#if this.second.spicy}}
+											<img class="spicy" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/spicy_zpsrheagtwl.png">
+										{{/if}}
+									</div>
+									<div class="item-description col-xs-12">
+										{{second.description}}
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="menu-price col-xs-6">
+									<div class="item-price col-xs-12">
+										{{first.price}}
+									</div>
+								</div>
+								<div class="menu-price col-xs-6">
+									<div class="item-price col-xs-12">
+										{{second.price}}
+									</div>
+								</div>
+							</div>
+						{{/each}}
+				</div>
+			</div>
+		{{/each}}
+	</div>
 </div>

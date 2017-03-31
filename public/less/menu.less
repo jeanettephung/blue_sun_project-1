@@ -1,318 +1,312 @@
+@import "variables.less";
+
 /* MENU */
-@media (min-width: 797px) {
-	#menu_mobile { 
-		display: none;
+#menu {
+	@media (min-width: 797px) {
+		#menu_mobile { 
+			display: none;
+		}
 	}
-}
-@media (max-width: 797px) {
-	#menu_desktop { 
-		display: none;
+	@media (max-width: 797px) {
+		#menu_desktop { 
+			display: none;
+		}
 	}
-}
 
-a.close_menu {
-	color: #fff;
-	margin-bottom: 30px;
-}
+	a.close_menu {
+		color: #fff;
+		margin-bottom: 30px;
+	}
 
-#menu_mobile .menu-col {
-	color: #d4ac74;
-}
+	#menu_mobile {
+		.item-name, .item-price {
+			color: @orange;
+		}
 
-#menu_mobile .item-description {
-	color: #fff;
-}
+		.item-description {
+			color: #fff;
+		}
+	}
 
-.spicy {
-	width: 20px;
-}
+	.spicy {
+		width: 20px;
+	}
 
-/* DESKTOP */
-#menu_desktop .menu-col .item-name, #menu_desktop .menu-col .item-price {
-	background-color: transparent!important;
-}
-#menu_desktop .menu-left {
-	padding-right: 30px;
-}
-#menu_desktop .menu-right {
-	padding-left: 30px;
-}
-.desktop-header-img {
-	width: 100%;
-	height: 150px;
+	/* DESKTOP */
+	.cat-header {
+		color: #fff;
+		white-space: nowrap;
+		z-index: 10;
+	}
 	
-/*
-	-webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: gray;
-  position: relative;
-*/
-}
-#category_col {
-	margin-top: 10px;
-	z-index: 60;
-}
-#category_col .category_menu {
-	padding: 3px;
-}
-.category_menu .desktop-header-img .menu-header {
-	font-size: 1.4vw;
-	position: absolute;
-	bottom: 0px;
-  left: 0px;
-	margin: 0 auto;
-	background-color: rgba(68, 1, 1, 0.73);
-/*
-	padding: 0;
-	margin-top: 20%;
-*/
-}
-.desktop-header-img:hover {
-	background-size: 200%;
-}
-.active .menu-header {
-/*	color: #d4ac74;*/
-}
-.inactive_btn {
-	-webkit-filter: grayscale(45%);  
-	filter: grayscale(45%);
-}
-.menu-cat {
-	top: 10px;
-}
-.inactive_cat {
-	display: none;
-}
-.inactive_btn .menu-header {
-	color: white;
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-.category_menu:hover {
-	cursor: pointer;
-}
-.cat-header-img {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 60%;
-	height: 20%;
-/*	background-color: white;*/
-	background-image: url("https://s32.photobucket.com/user/redmoonnoodlehouse/library/");
-	background-attachment: fixed;
-	background-size: 100%;
-	z-index: -1;
-}
-.cat-header {
-	color: #fff;
-	z-index: 10;
-	white-space: nowrap;
-}
-.menu-scroll {
-	width: 100%;
-  padding: 0px 10px 30px 25px;
-	z-index: 5;
-	overflow: auto;
-	overflow-x: hidden;
-	max-height: 435px;
-	background-color: rgba(255, 255, 255, 0.57);
-	box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.57);
-}
-
-.desktop-header-img {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;	
-	position: relative;
-  text-align: center;
-}
-.desktop-header-1 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/starters_chicken_wings_zpsimnaxja1.png");
-}
-.desktop-header-2 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/beef_chicken_with_green_beans_zpsyxvpqfyn.png");
-}
-.desktop-header-3 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/mapo_tofu_zpshorcyrhg.png");
-	-webkit-filter: brightness(1.11);
-  filter: brightness(1.11);
-}
-.desktop-header-4 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/specialty_honey_walnut_shrimp_zpsemua6874.png");
-}
-.desktop-header-5 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/tan_tan_chopsticks_zpstfyom75r.png");
-}
-.desktop-header-6 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/drinks_zps0qntzeix.png");
-	-webkit-filter: brightness(1.2);
-  filter: brightness(1.2);
-}
-
-/* MOBILE */
-#menu_mobile.container {
-	padding: 0 !important;
-/*	background-color: rgba(245, 245, 245, 0.84);*/
-}
-#menu_mobile .menu-container {
-	padding: 0px 20px 0px 5px;
-}
-@media screen and (max-width: 480px) {
-  .menu-header-img {
-		height: 160px !important;
+	.cat-header-img {
+		background-attachment: fixed;
+		background-image: url("https://s32.photobucket.com/user/redmoonnoodlehouse/library/");
+		background-size: 100%;
+		height: 20%;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 60%;
+		z-index: -1;
 	}
-}
-@media screen and (max-width: 480px) {
-	.menu-header {
-		font-size: 35px !important;
+	
+	#category_col {
+		margin-top: 10px;
+		z-index: 60;
+
+		.category_menu {
+			padding: 3px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
-}
-@media screen and (max-width: 480px) {
-	.menu-col {
-		margin-bottom: 0px !important;
+
+	.category_menu .desktop-header-img .menu-header {
+		background-color: rgba(68, 1, 1, 0.73);
+		bottom: 0px;
+		font-size: 1.4vw;
+		left: 0px;
+		margin: 0 auto;
+		position: absolute;
 	}
-}
+	
+	.desktop-header-img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;	
+		height: 150px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		
+		&:hover {
+			background-size: 200%;
+		}
+	}
+	
+	.desktop-header-1 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/starters_chicken_wings_zpsimnaxja1.png");
+	}
+	
+	.desktop-header-2 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/beef_chicken_with_green_beans_zpsyxvpqfyn.png");
+	}
+	
+	.desktop-header-3 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/mapo_tofu_zpshorcyrhg.png");
+		-webkit-filter: brightness(1.11);
+		filter: brightness(1.11);
+	}
+	
+	.desktop-header-4 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/specialty_honey_walnut_shrimp_zpsemua6874.png");
+	}
+	
+	.desktop-header-5 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/tan_tan_chopsticks_zpstfyom75r.png");
+	}
+	
+	.desktop-header-6 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/drinks_zps0qntzeix.png");
+		-webkit-filter: brightness(1.2);
+		filter: brightness(1.2);
+	}
 
-#menu_mobile .menu-header-img {
-	background-position: 0px 40%;
-}
+	.inactive_btn {
+		-webkit-filter: grayscale(45%);  
+		filter: grayscale(45%);
 
-.menu_header {
-	font-size: 40px;
-	color: #d4ac74;
-}
+		.menu-header {
+			color: #fff;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+	}
+	
+	.inactive_cat {
+		display: none;
+	}
 
-.menu-header-img {
-	height: 330px;
-	width: 100%;
-	display: flex;
-  justify-content: center;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-@media screen and (min-width: 480px) {
-	.menu-header-img {
+	.menu-cat {
+		top: 10px;
+	}
+	
+	#menu_desktop {
+		.menu-col .item-name, #menu_desktop .menu-col .item-price {
+			background-color: transparent!important;
+		}
+
+		.menu-left {
+			padding-right: 30px;
+		}
+
+		.menu-right {
+			padding-left: 30px;
+		}
+	}
+	
+	.menu-scroll {
+		background-color: rgba(255, 255, 255, 0.57);
+		box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.57);
+		max-height: 435px;
+		overflow: auto;
+		overflow-x: hidden;
+		padding: 0px 10px 30px 25px;
+		width: 100%;
+		z-index: 5;
+	}
+
+	/* MOBILE */
+	#header1 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/starters_chicken_wings_zpsimnaxja1.png");
+	}
+
+	#header2 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/beef_chicken_with_green_beans_zpsyxvpqfyn.png");
+	}
+
+	#header3 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/mapo_tofu_zpshorcyrhg.png");
+	}
+
+	#header4 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/specialty_honey_walnut_shrimp_zpsemua6874.png");
 		background-position: center;
 	}
-}
-.menu-header-img:hover {
-	cursor: pointer;
-}
-.menu-header {
-	font-family: "Maiandra", arial;
-	font-size: 70px;
-	align-self: center;
-	text-align: center;
-	font-weight: bold;
-	color: white;
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-.menu-right {
-	margin-bottom: 50px !important;
-}
-.menu-category {
-	 	margin-left: 2%;
-}
-@media screen and (max-width: 480px) {
-	.menu-category {
-		margin-left: 4%;
-	}
-}
-.menu-container {
-		width: 75%;
-    margin: 0 auto;
-}
-@media screen and (max-width: 480px) {
-	.menu-container {
-		width: 100%;
-	}
-}
-.menu-col {
-	margin-bottom: 0px;
-	    
-}
-.menu-item {
-	margin-top: 20px;
-	padding: none;
-}
-.menu-price {
-	padding: none;
-}
-@media screen and (max-width: 480px) {
-	.menu-item {
-		margin-top: 25px;
-	}
-}
-.last-item {
-	margin-bottom: 50px;
-}
-.item-name {
-	padding: 0 15px !important;
-}
-.item-name, .item-price {	
-	color: rgb(49, 49, 49);
-	font-family: "aleo-regular", arial;
-	font-size: 16px;
-	margin: 0;
-	background: transparent;
-	letter-spacing: .5px;
-	font-weight: normal;
-}
 
-.item-price {
-	padding-left: 15px;
-}
+	#header5 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/tan_tan_chopsticks_zpstfyom75r.png");
+		background-position: 0px -16px;
+	}
 
-@media screen and (max-width: 480px) {
+	#header6 {
+		background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/drinks_zps0qntzeix.png");
+	}
+	
+	.item-name {
+		padding: 0 15px !important;
+	}
+	
+	.item-description {
+		color: @gray;
+		letter-spacing: 1px;
+		padding: 0 0 0 15px;
+		font-family: "aleo-italic", arial;
+		font-size: 12px;
+		font-style: italic;
+		font-weight: lighter;
+	}
+	
+	.item-name, .item-price {	
+		background: transparent;
+		color: rgb(49, 49, 49);
+		font-family: "aleo-regular", arial;
+		font-size: 16px;
+		font-weight: normal;
+		letter-spacing: .5px;
+		margin: 0;
+	}
+
 	.item-price {
-		padding: 0px;
+		padding-left: 15px;
+		
+		@media screen and (max-width: 480px) {
+			padding: 0px;
+		}
 	}
-}
 
-.item-description {
-	color: #4c4545;
-	font-family: "aleo-italic", arial;
-	font-size: 12px;
-	font-style: italic;
-	letter-spacing: 1px;
-	font-weight: lighter;
-	padding: 0 0 0 15px;
-}
+	.last-item {
+		margin-bottom: 50px;
+	}
+	
+	.menu-category {
+		margin-left: 2%;
+		
+		@media screen and (max-width: 480px) {
+			margin-left: 4%;
+		}
+	}
+	
+	.menu-col {
+		margin-bottom: 0px;
+		
+		@media screen and (max-width: 480px) {
+			margin-bottom: 0px !important;
+		}
+	}
+	
+	.menu-container {
+		width: 75%;
+		margin: 0 auto;
+		
+		@media screen and (max-width: 480px) {
+			width: 100%;
+		}
+	}
+	
+	.menu-header {
+		align-self: center;
+		color: #fff;
+		font-family: "Maiandra", arial;
+		font-size: 70px;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		
+		@media screen and (max-width: 480px) {
+			font-size: 35px !important;
+		}
+	}
+	
+	.menu-header-img {
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		height: 330px;
+		justify-content: center;
+		width: 100%;
+		
+		&:hover {
+			cursor: pointer;
+		}
+		
+		@media screen and (max-width: 480px) {
+			background-position: center;
+			height: 160px !important;
+		}
+	}
+	
+	.menu-item {
+		margin-top: 20px;
+		padding: none;
+		
+		@media screen and (max-width: 480px) {
+			margin-top: 25px;
+		}
+	}
+	
+	#menu_mobile{
+		&.container {
+			padding: 0 !important;
+		}
 
-
-#header1 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/starters_chicken_wings_zpsimnaxja1.png");
-}
-
-#header2 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/beef_chicken_with_green_beans_zpsyxvpqfyn.png");
-}
-
-#header3 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/mapo_tofu_zpshorcyrhg.png");
-}
-
-#header4 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/specialty_honey_walnut_shrimp_zpsemua6874.png");
-	background-position: center;
-}
-
-#header5 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/tan_tan_chopsticks_zpstfyom75r.png");
-	background-position: 0px -16px;
-}
-
-#header6 {
-	background-image: url("https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/drinks_zps0qntzeix.png");
+		.menu-container {
+			padding: 0px 20px 0px 5px;
+		}
+	}
+	
+	#menu_mobile .menu-header-img {
+		background-position: 0px 40%;
+	}
+	
+	.menu-price {
+		padding: none;
+	}
+	
+	.menu-right {
+		margin-bottom: 50px !important;
+	}
 }
