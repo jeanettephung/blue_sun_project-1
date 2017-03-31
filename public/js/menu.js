@@ -15,19 +15,6 @@ $(document).click(function (event) {
         $navbar.collapse('hide');
     }
 
-//    //gallery hover effect
-//    $('.gallery .media img').hover(function(){
-//        $('.gallery .media img').addClass('inactive');
-//        $(this).removeClass('inactive').addClass('active');
-//    }, function(){
-//        $('.gallery .media img').removeClass('inactive');
-//    });
-
-
-
-
-
-
     //menu show more items btn
     function update_btn(old_btn_id, new_btn_id, btn_content){
         $(old_btn_id).removeAttr('id');

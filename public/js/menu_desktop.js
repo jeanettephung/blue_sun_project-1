@@ -82,4 +82,8 @@ $(document).ready(function(){
 		refresh();
 		select("#menu_cat6", "#menu_col6");
 	});
+	
+	// adjust placement of footer 
+	var bodyHeight = $(window).height() - $("#footer").height();
+	$("body").css("min-height", bodyHeight);
 });

@@ -22,4 +22,8 @@ $(document).ready(function(){
 		matchHeight();
 		displayImg();
 	});
+	
+	// adjust placement of footer 
+	var bodyHeight = $(window).height() - $("#footer").height();
+	$("body").css("min-height", bodyHeight);
 });

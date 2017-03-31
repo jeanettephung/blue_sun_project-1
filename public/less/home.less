@@ -1,3 +1,5 @@
+@import "variables.less";
+
 /* Contents:
 		Basic Style
 		Featured Carousel
@@ -59,8 +61,6 @@ body {
 	}
 }
 
-
-
 /* Hours and Specials */
 .border-between > [class*='col-']:before {
 	background: white;
@@ -77,7 +77,7 @@ body {
 }
 
 .row.border-between {
-	background-color: #830A10;
+	background-color: @red;
 	color: white;
 	margin: 0;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 #intro, #awards {
-	color: #d4ac74;
+	color: @orange;
 	margin: 25px auto;
 	text-align: center;
 	width: 90%;
@@ -188,7 +188,7 @@ body {
 	font-size: 2em;
 
 	.fa {
-		background-color: #830a10;
+		background-color: @red;
 		padding: 5px;
 	}
 }

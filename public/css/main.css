@@ -247,7 +247,7 @@ body {
   width: 100%;
 }
 .newsletter-box input#appendedInputButton {
-  background: #FFFFFF;
+  background: #fff;
   clear: both;
   display: inline-block;
   float: left;
@@ -267,7 +267,7 @@ body {
 }
 .social li {
   background: none repeat scroll 0 0 #3b3b3b;
-  border: 2px solid #3b33b;
+  border: 2px solid #3b3b3b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
@@ -405,7 +405,7 @@ body {
   display: none;
 }
 .row.border-between {
-  background-color: #830A10;
+  background-color: #830a10;
   color: white;
   margin: 0;
 }
@@ -875,7 +875,7 @@ body {
 }
 /* NAVIVATION BAR */
 .active_page a {
-  color: #840a11 !important;
+  color: #830a10 !important;
   font-weight: bolder;
 }
 #grab_nav > li.active_page > a {
@@ -897,7 +897,7 @@ body {
   font-size: 18px;
 }
 .navbar-default:before {
-  background-color: #830A10;
+  background-color: #830a10;
   background-repeat: repeat;
   border-color: transparent;
   content: "";
