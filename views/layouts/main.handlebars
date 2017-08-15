@@ -1,103 +1,90 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Red Moon Noodle House</title>  
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<script src="/js/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-			<script src="/js/bootstrap.js"></script>
+<html>
+  <head>
+    <title>Red Moon Noodle House</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="top-strip">Special: Free Milk Tea for those with a student ID !</div>
+    <nav id="main" class="navbar navbar-default navbar-fixed-top container-fluid" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="/index">
+            <img id="nav_logo" alt="Brand" src="./img/logo_stroke.png">
+          </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" id="grab_nav">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/menu">Menu</a></li>
+<!--          <li><a href="/cater">Cater</a></li>-->
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="background_wood"></div>
+    {{{body}}}	
+  </body>
 
-      <script type="text/javascript" src="js/main.js"></script>
-			<script type="text/javascript" src="js/footer.js"></script>
-			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-			<link rel="stylesheet" href="/css/bootstrap.min.css">
-			<link rel="stylesheet" href="/css/main.css">
+  <div id="to-top">
+    <center><a href="javascript:" id="return-to-top" class="hvr-float">
+      <i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
+      <p>Top</p>
+      <br>
+      </a>
+    </center>
+  </div>
 
-		</head>
-		
-		<body>
-			
-		<!-- NAVIGATION BAR -->
-			<div class="top-strip">Special: Free Milk Tea for those with a student ID !</div>
-				<nav id="main" class="navbar navbar-default navbar-fixed-top container-fluid" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/index">
-							<img id="nav_logo" alt="Brand" src="https://i32.photobucket.com/albums/d28/redmoonnoodlehouse/logo_stroke_zpsw2ovimem.png">
-						</a>
-					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right" id="grab_nav">
-							<li><a href="/index">Home</a></li>
-							<li><a href="/about">About</a></li>
-							<li><a href="/menu">Menu</a></li>
-							<li><a href="/cater">Cater</a></li>
-							<li><a href="/contact">Contact Us</a></li>
-						</ul>
-					</div>
-				</nav>
-		<!-- NAVIGATION BAR END-->	
-
-				<div class="background_wood"></div>
-				{{{body}}}	
-			
-			</body>
-		
-			<div id="to-top">
-				<center><a href="javascript:" id="return-to-top" class="hvr-float">
-					<i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
-					<p>Top</p>
-					<br>
-					</a>
-				</center>
-			</div>
-		
-		<!-- FOOTER -->
-			<footer>
-				<div class="footer" id="footer">
-					<div class="container">
-						<div class="col-md-11 col-xs-9">
-							<ul>
-								<li class="address_desktop"> 
-									<strong>Address:</strong> 4646 Convoy St. #114 San Diego, CA 92111
-								</li>
-								<li class="address_mobile"> 
-									<strong>Address:</strong> 4646 Convoy St. #114 
-								</li>
-								<li class="address_mobile address_margin"> 
-									San Diego, CA 92111 
-								</li>
-								<li> 
-									<strong>Phone:</strong> (858) 576 - 7466 
-								</li>
-								<li> 
-									<strong>Email:</strong> redmoonnoodlehouse@gmail.com 
-								</li>
-							</ul>
-					</div>
-					<div class="col-md-1 col-xs-3">
-						<ul class="social">
-							<li class="facebook"> 
-									<a href="https://www.facebook.com/redmoonnoodlehouse/"> 
-											<i class="fa fa-facebook facebook-icon"></i> 
-									</a> 
-							</li>
-							<li class="yelp"> 
-									<a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego"> 
-										<i class="fa fa-yelp"></i> 
-								</a> 
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-<!-- FOOTER END -->
-	</html>
+  <footer>
+    <div class="footer" id="footer">
+      <div class="container">
+        <div class="col-md-11 col-xs-9">
+          <ul>
+            <li class="address_desktop"> 
+              <strong>Address:</strong> 4646 Convoy St. #114 San Diego, CA 92111
+            </li>
+            <li class="address_mobile"> 
+              <strong>Address:</strong> 4646 Convoy St. #114 
+            </li>
+            <li class="address_mobile address_margin"> 
+              San Diego, CA 92111 
+            </li>
+            <li> 
+              <strong>Phone:</strong> (858) 576 - 7466 
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1 col-xs-3">
+          <ul class="social">
+            <li class="facebook"> 
+              <a href="https://www.facebook.com/redmoonnoodlehouse/"> 
+                <i class="fa fa-facebook facebook-icon"></i> 
+              </a> 
+            </li>
+            <li class="yelp"> 
+              <a href="https://www.yelp.com/biz/red-moon-noodle-house-san-diego"> 
+                <i class="fa fa-yelp"></i> 
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

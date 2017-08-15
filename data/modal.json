@@ -1,30 +1,30 @@
 [
-	{
-		"id": "name_modal",
-		"message": "Name must be filled out."
-	},
-	{
-		"id": "email_modal",
-		"message": "You have entered an invalid email address."
-	},
-	{
-		"id": "phone_modal",
-		"message": "Phone must be filled out and must only be numbers. (ex. xxxxxxxxxxx)"
-	},
-	{
-		"id": "phone2_modal",
-		"message": "Invalid phone number (include area number - ex. xxxxxxxxxxx)"
-	},
-	{
-		"id": "date_modal",
-		"message": "Date must be filled out."
-	},
-	{
-		"id": "message_modal",
-		"message": "Message must be filled out."
-	},
-	{
-		"id": "success_modal",
-		"message": "Message has been successfuly sent!"
-	}
+  {
+    "id": "name_modal",
+    "message": "Name must be filled out."
+  },
+  {
+    "id": "email_modal",
+    "message": "You have entered an invalid email address."
+  },
+  {
+    "id": "phone_modal",
+    "message": "Phone must be filled out and must only be numbers. (ex. xxxxxxxxxxx)"
+  },
+  {
+    "id": "phone2_modal",
+    "message": "Invalid phone number (include area number - ex. xxxxxxxxxxx)"
+  },
+  {
+    "id": "date_modal",
+    "message": "Date must be filled out."
+  },
+  {
+    "id": "message_modal",
+    "message": "Message must be filled out."
+  },
+  {
+    "id": "success_modal",
+    "message": "Message has been successfuly sent!"
+  }
 ]
