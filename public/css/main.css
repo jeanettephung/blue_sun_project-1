@@ -449,19 +449,34 @@ body {
   width: 90%;
 }
 /* Yelp Carousel */
-#carousel-reviews > .carousel-control.left,
-#carousel-reviews > .carousel-control.right {
-  background: none;
-  width: 25px;
+#yelpCarousel {
+  height: 450px;
 }
-#carousel-reviews > .left.carousel-control,
-#carousel-reviews > .carousel-control.right {
-  left: -25px;
+#yelpCarousel span {
+  font-size: 60px;
+  margin-top: -50px;
+}
+#yelpCarousel .carousel-control.left {
+  left: -120px;
+}
+#yelpCarousel .carousel-control.right {
+  right: -85px;
+}
+#yelpCarousel .carousel-control.left, 
+#yelpCarousel .carousel-control.right {
+  background-image: none;
+  top: 125px;
+}
+#yelpCarousel .carousel-inner {
+  left: 7%;
+  height: 300px;
+  overflow: visible;
+  width: 86%;
 }
 .block-text {
   background-color: rgba(0, 0, 0, 0.36);
   font-size: 14px;
-  height: 390px;
+  height: 420px;
   margin-top: 27px;
   padding: 15px 18px;
   text-align: center;
@@ -516,11 +531,22 @@ body {
     height: 170px !important;
   }
 }
-/* MENU */
-#menu {
-  /* DESKTOP */
-  /* MOBILE */
+@media screen and (max-width: 990px) {
+  #yelpCarousel .last {
+    display: none;
+  }
+  #yelpCarousel .carousel-inner {
+    left: 10%;
+    width: 80%;
+  }
+  #yelpCarousel .carousel-control.left {
+    left: -17%;
+  }
+  #yelpCarousel .carousel-control.right {
+    right: -17%
+  }
 }
+/* MENU */
 @media (min-width: 797px) {
   #menu #menu_mobile {
     display: none;
@@ -544,6 +570,11 @@ body {
 }
 #menu .spicy {
   width: 20px;
+}
+#menu .menu_header {
+  color: #fff;
+  font-size: 30px;
+  margin: 15px 37% -5px;
 }
 #menu .cat-header {
   color: #fff;

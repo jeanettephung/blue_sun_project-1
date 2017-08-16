@@ -94,9 +94,9 @@
     <div id="yelpCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         {{#each review.row}}
-          <div class="item {{#if active}} active {{/if}} ">   
+          <div class="item {{#if active}} active {{/if}}">   
             {{#each item}}
-              <div class="col-md-4 col-sm-6 {{#if hidden}} hidden-xs {{/if}}">
+              <div class="col-md-4 col-sm-6 {{#if hidden}}hidden-xs{{/if}} {{#if last}}last{{/if}}">
                 <div class="block-text rel zmin">
                   <img class="review_img img-rounded" src="{{image}}">
                   <p>{{review}}</p>
